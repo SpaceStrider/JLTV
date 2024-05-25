@@ -1,0 +1,17 @@
+GenericEntity {
+ ID "5C887105037669F0"
+ components {
+  MeshObject "{5C887105037669C5}" {
+   Object "{502D902C992456AB}Assets/Vehicles/Wheeled/JLTV/JLTV_Roof.xob"
+  }
+  Hierarchy "{5C887105037669DB}" {
+  }
+  RigidBody "{5C887105037669DA}" {
+   Enabled 0
+   Mass 100
+   ModelGeometry 1
+  }
+  RplComponent "{5C887105037669D7}" {
+  }
+ }
+}

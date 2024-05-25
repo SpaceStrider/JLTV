@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{5556CFF86839E7CA}UI/Textures/EditorPreviews/Vehicles/Wheeled/JLTV/JLTV_Unarmed_Olive.edds"
+ Configurations {
+  PNGResourceClass PC {
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass XBOX_ONE : PC {
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass XBOX_SERIES : PC {
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass PS4 : PC {
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass HEADLESS : PC {
+   ColorSpace ToSRGB
+  }
+ }
+}

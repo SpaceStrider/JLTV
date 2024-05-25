@@ -1,0 +1,43 @@
+Vehicle : "{49B5C8D1F28E7B7F}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{5C72CA225F7A3B65}" {
+     SourceMaterial "Mirror_Generic"
+     AssignedMaterial "{A47C5D03ADB1464D}Assets/Vehicles/Wheeled/JLTV/data/Mirror_generic.emat"
+    }
+    MaterialAssignClass "{5C88914258DC394C}" {
+     SourceMaterial "Main_Body"
+     AssignedMaterial "{F434820F3B2BEDEE}Assets/Vehicles/Wheeled/JLTV/data/Main_Body_Black.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_Image "{9526E7DBA3233A96}UI/Textures/EditorPreviews/Vehicles/Wheeled/JLTV/JLTV_CROWSII_Black.edds"
+    m_aOccupantFillCompartmentTypes +{
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5C946CE5223089AE}" {
+   Attributes SCR_ItemAttributeCollection "{5C946CE5312E449E}" {
+    CustomAttributes {
+     PreviewRenderAttributes "{5C946CE50DF003B0}" {
+      PreviewPrefab "{41F4B0594B760AD2}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII_Black.et"
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo Roof {
+     Prefab "{DAAFEBC0DE7B4E71}Prefabs/Vehicles/Wheeled/JLTV/VehParts/JLTV_Roof_Black.et"
+    }
+    RegisteringComponentSlotInfo CROWS {
+     Prefab "{1891D4F4DDB374BA}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_Turret_Black.et"
+    }
+   }
+  }
+ }
+}

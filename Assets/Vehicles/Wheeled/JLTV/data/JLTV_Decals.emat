@@ -1,0 +1,9 @@
+MatPBRDecal {
+ Color 0 0 0 1
+ BlendMode AlphaBlend
+ OpacityMap "{C901FF9B20FC7173}Assets/Vehicles/Wheeled/JLTV/data/Textures/JLTV_decals_01.edds"
+ GBufferNormal 1
+ GBufferRoughness 1
+ GBufferMetalness 1
+ GBufferAO 1
+}

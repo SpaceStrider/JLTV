@@ -1,0 +1,13 @@
+GenericEntity : "{26559189B5711270}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Weapon_Armor.et" {
+ ID "5C8881729E7FAF5A"
+ components {
+  MeshObject "{5C8881729E7FAF54}" {
+   Materials {
+    MaterialAssignClass "{5C889143049FAA3E}" {
+     SourceMaterial "Cabin"
+     AssignedMaterial "{6C1EC521030C7BC8}Assets/Vehicles/Wheeled/JLTV/data/Cabin_Black.emat"
+    }
+   }
+  }
+ }
+}

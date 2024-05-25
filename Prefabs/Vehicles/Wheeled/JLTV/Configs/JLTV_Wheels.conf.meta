@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{292FE6A0994FFF87}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Wheels.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

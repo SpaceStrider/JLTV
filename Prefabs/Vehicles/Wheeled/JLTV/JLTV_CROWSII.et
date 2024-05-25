@@ -1,0 +1,92 @@
+Vehicle : "{3A4CDF7428E32E7C}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{5C72CA225F7A3B65}" {
+     SourceMaterial "Mirror_Generic"
+     AssignedMaterial "{A47C5D03ADB1464D}Assets/Vehicles/Wheeled/JLTV/data/Mirror_generic.emat"
+    }
+   }
+  }
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   CompartmentSlots {
+    CargoCompartmentSlot Passenger_L02 {
+     DoorInfoList {
+      CompartmentDoorInfo "{5C72BBFC0A0667A1}" {
+      }
+     }
+    }
+    CargoCompartmentSlot Passenger_R02 {
+     DoorInfoList {
+      CompartmentDoorInfo "{5C72BBFC0A0667A1}" {
+       SeatPositionAligning 1
+      }
+     }
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#SPC_EditableEntity_JLTV_CROWSII_Name"
+    m_Image "{825A6C686D907E11}UI/Textures/EditorPreviews/Vehicles/Wheeled/JLTV/JLTV_CROWSII.edds"
+    m_aAuthoredLabels {
+     3 36 20 200 21 1001
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 2500
+     }
+     SCR_EntityBudgetValue "{60F65AB2855D435D}" {
+      m_BudgetType RANK_LIEUTENANT
+      m_Value 4
+     }
+    }
+    m_aOccupantFillCompartmentTypes {
+     2 1
+    }
+    m_aCrewEntityBudgetCost {
+     SCR_EntityBudgetValue "{5C889141EB174B45}" {
+      m_BudgetType AI
+      m_Value 1
+     }
+    }
+    m_aPassengerEntityBudgetCost {
+     SCR_EntityBudgetValue "{5C889141EB115093}" {
+      m_BudgetType AI
+      m_Value 2
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5C946CE5223089AE}" {
+   Attributes SCR_ItemAttributeCollection "{5C946CE5312E449E}" {
+    CustomAttributes {
+     PreviewRenderAttributes "{5C946CE50DF003B0}" {
+      PreviewPrefab "{49B5C8D1F28E7B7F}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII.et"
+     }
+    }
+   }
+   MultiSlots {
+    MultiSlotConfiguration "{5DE8B00C63335F32}" {
+     SlotTemplate InventoryStorageSlot Turret {
+      Prefab "{9B8CDC3CD2E535D2}Prefabs/Weapons/Magazines/Box_30x113_M230LF_160rnd_HEDP.et"
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo CROWS {
+     Prefab "{A97857BDDA2E1607}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_Turret.et"
+     DisablePhysicsInteraction 1
+     RegisterActions 1
+     RegisterDamage 1
+     RegisterControllers 1
+     RegisterWeapons 1
+     RegisterCompartments 1
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.032 0.032 0.032 1
+ Emissive 0.044 0.044 0.044 0
+ EmissiveLV 4
+ ApplyAlbedoToEmissive 1
+ EmissiveMap "{79037885D7B9ED69}Assets/Vehicles/Wheeled/JLTV/data/Textures/Displays.edds"
+ BCRMap "{8B59275E8F260750}Assets/_SharedData/Glass/ST_Glass_Test_01_BCR.edds"
+}

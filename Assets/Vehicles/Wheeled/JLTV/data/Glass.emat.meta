@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{44BB55AB8DCB8B56}Assets/Vehicles/Wheeled/JLTV/data/Glass.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

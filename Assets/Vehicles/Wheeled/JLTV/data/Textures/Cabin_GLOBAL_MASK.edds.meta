@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{209E5C56BF89DECA}Assets/Vehicles/Wheeled/JLTV/data/Textures/Cabin_GLOBAL_MASK.edds"
+ Configurations {
+  TIFFResourceClass PC {
+  }
+  TIFFResourceClass XBOX_ONE : PC {
+  }
+  TIFFResourceClass XBOX_SERIES : PC {
+  }
+  TIFFResourceClass PS4 : PC {
+  }
+  TIFFResourceClass HEADLESS : PC {
+  }
+ }
+}

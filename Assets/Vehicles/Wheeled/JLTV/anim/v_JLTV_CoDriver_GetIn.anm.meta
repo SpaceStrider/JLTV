@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F0CE6D9E0313F06B}Assets/Vehicles/Wheeled/JLTV/anim/v_JLTV_CoDriver_GetIn.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

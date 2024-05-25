@@ -1,0 +1,84 @@
+Vehicle : "{E62EEF185EC31C54}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Unarmed.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#SPC_EditableEntity_JLTV_OGPK_Name"
+    m_Image "{41F0D81E32784B2E}UI/Textures/EditorPreviews/Vehicles/Wheeled/JLTV/JLTV_OGPK.edds"
+    m_aAuthoredLabels {
+     3 36 20 200 21 1001
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 1000
+     }
+     SCR_EntityBudgetValue "{60F65AB2BBAD3815}" {
+      m_BudgetType RANK_SERGEANT
+      m_Value 3
+     }
+    }
+    m_aOccupantFillCompartmentTypes + {
+     1
+    }
+    m_aCrewEntityBudgetCost {
+     SCR_EntityBudgetValue "{5C889141EB78D3F1}" {
+      m_BudgetType AI
+      m_Value 1
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5C946CE5223089AE}" {
+   Attributes SCR_ItemAttributeCollection "{5C946CE5312E449E}" {
+    CustomAttributes {
+     PreviewRenderAttributes "{5C946CE50DF003B0}" {
+      PreviewPrefab "{E49B4C9AEA70BE3F}Prefabs/Vehicles/Wheeled/JLTV/JLTV_OGPK.et"
+     }
+    }
+   }
+   MultiSlots {
+    MultiSlotConfiguration "{5DE8B00DB02BE538}" {
+     SlotTemplate InventoryStorageSlot Turret {
+      Prefab "{C820846B0521423B}Prefabs/Weapons/Magazines/Box_127x99_M2_100rnd_4AP_1APIT.et"
+     }
+     NumSlots 4
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo Roof {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{B1C534864D4A8ED4}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_gun_mount.et"
+     DisablePhysicsInteraction 1
+     RegisterActions 1
+     RegisterDamage 1
+     RegisterControllers 1
+     RegisterWeapons 1
+     RegisterCompartments 1
+    }
+   }
+   SlotMappers {
+    CompartmentToSlotMapping Turret {
+     SlotName "Turret"
+     Coverage 0.75
+     Compartments {
+      "PilotCompartment" "Passenger_L02" "Passenger_R02" "Passenger_R01"
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{5C888176CB3C87A6}" {
+     ContextName "Gunner_SwitchSeat"
+     Position PointInfo "{5C888176CB3C10D5}" {
+      PivotID "Gunner_SwitchSeat"
+     }
+    }
+   }
+  }
+ }
+}

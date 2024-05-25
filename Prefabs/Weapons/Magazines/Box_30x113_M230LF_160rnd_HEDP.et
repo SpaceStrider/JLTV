@@ -1,0 +1,39 @@
+GenericEntity : "{5CD690CF2464ABA9}Prefabs/Weapons/Magazines/Box_127x99_M2_100rnd_Base.et" {
+ ID "476AE746F954DD20"
+ components {
+  AICombatPropertiesComponent "{59CE86D96C332DDF}" {
+   IndirectlyUsedAgainst 3
+  }
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "30mm x 113 HEDP Belt"
+     Description "M789 High Explosive, Dual Purpose (HEDP)"
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{52D6B596199B2E1C}" {
+      CameraDistanceToItem 3
+     }
+    }
+   }
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell MagazineWellChain30 "{476AE746EC5FBEE9}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "30mm x 113 HEDP Belt"
+    m_sAmmoCaliber "30mm x 113"
+    m_sAmmoType "AR-AmmoType_M2_FMJTracer"
+    m_eAmmoTypeFlags 3
+   }
+   ItemModel "{E1D9125A7EB3BD1C}Assets/Weapons/Magazines/M2/Magazine_100rnd_M2.xob"
+   MaxAmmo 160
+   AmmoConfig "{88768FCF2920FA28}Configs/Weapons/Ammo/Ammo_30x113.conf"
+   AmmoMapping {
+   }
+  }
+  MeshObject "{CA6BE4D6A23F8EF0}" {
+   Object "{2482E01261AB2FB5}Assets/Weapons/Magazines/PM/Magazine_8rnd_PM.xob"
+  }
+ }
+}

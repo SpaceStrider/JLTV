@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{CF7AF9C7FB815A5C}Assets/Vehicles/Wheeled/JLTV/anim/v_JLTV_Passenger_L_GetIn.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

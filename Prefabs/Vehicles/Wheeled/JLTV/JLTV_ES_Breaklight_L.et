@@ -1,0 +1,9 @@
+GameEntity : "{A50B7F75B249F351}Prefabs/Vehicles/Core/Lights/VehicleEmissiveSurface_Base.et" {
+ ID "54DEF484EE00449D"
+ components {
+  MeshObject "{54DEF48745980A1F}" {
+   Object "{9447F8CB6BDEBDAC}Assets/Vehicles/Wheeled/BTR70/Lights/brakelight_L_BTR70.xob"
+  }
+ }
+ coords 2.383 0.997 -15.19
+}

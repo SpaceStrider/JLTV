@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{81F462D9C32DB8D8}UI/Textures/EditorPreviews/Vehicles/Wheeled/JLTV/JLTV_OGPK_Black.edds"
+ Configurations {
+  PNGResourceClass PC {
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass XBOX_ONE : PC {
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass XBOX_SERIES : PC {
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass PS4 : PC {
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass HEADLESS : PC {
+   ColorSpace ToSRGB
+  }
+ }
+}

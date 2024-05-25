@@ -1,0 +1,6 @@
+LightEntity : "{00EF649B4A1C872B}Prefabs/Vehicles/Wheeled/JLTV/Lights/VehicleLight_Head_JLTV.et" {
+ ID "514ED7499ABC27FE"
+ LV 8
+ Radius 100
+ SpotAngle 120
+}

@@ -1,0 +1,883 @@
+ProcAnimSignalResClass {
+ Inputs {
+  IOPItemInputClass {
+   id 51
+   name "speed"
+   tl -955 585
+   children {
+    54
+   }
+  }
+  IOPInputValueClass {
+   id 53
+   name "Value 53"
+   tl -548 487
+   children {
+    54
+   }
+   value 2
+  }
+  IOPItemInputClass {
+   id 55
+   name "engineRPM"
+   tl -949 783
+   children {
+    101
+   }
+  }
+  IOPInputValueClass {
+   id 58
+   name "Value 58"
+   tl -737 898
+   children {
+    57
+   }
+   value 20
+  }
+  IOPInputValueClass {
+   id 60
+   name "Value 60"
+   tl -531 908
+   children {
+    61
+   }
+   value 15
+  }
+  IOPItemInputClass {
+   id 62
+   name "fuel1"
+   tl -962.222 282.222
+   children {
+    64
+   }
+  }
+  IOPInputValueClass {
+   id 65
+   name "Value 65"
+   tl -787.778 397.778
+   children {
+    64
+   }
+   value 5
+  }
+  IOPItemInputClass {
+   id 66
+   name "engineOn"
+   tl -980 1161.429
+   children {
+    68 74 77 78 84 95 99
+   }
+  }
+  IOPInputValueClass {
+   id 69
+   name "Value 69"
+   tl -742.857 1045.714
+   children {
+    68
+   }
+   value 45
+  }
+  IOPInputValueClass {
+   id 71
+   name "Value 71"
+   tl -747.143 1268.571
+   children {
+    74
+   }
+   value 40
+  }
+  IOPInputValueClass {
+   id 75
+   name "Value 75"
+   tl -744.286 1490
+   children {
+    77
+   }
+   value 42
+  }
+  IOPInputValueClass {
+   id 76
+   name "Value 76"
+   tl -740 1690
+   children {
+    78
+   }
+   value 38
+  }
+  IOPInputValueClass {
+   id 83
+   name "Value 83"
+   tl -745.714 1913.175
+   children {
+    84
+   }
+   value 40
+  }
+  IOPInputValueClass {
+   id 90
+   name "Value 90"
+   tl -516.25 2277.5
+   children {
+    91
+   }
+   value 1.1
+  }
+  IOPInputValueClass {
+   id 93
+   name "Value 93"
+   tl -740 2421.429
+   children {
+    95
+   }
+   value 50
+  }
+  IOPInputValueClass {
+   id 98
+   name "Value 98"
+   tl -757.5 2662.5
+   children {
+    99
+   }
+   value 5
+  }
+ }
+ Ops {
+  IOPItemOpMulClass {
+   id 54
+   name "Mul 54"
+   tl -333 592
+   children {
+    52
+   }
+   inputs {
+    ConnectionClass connection {
+     id 53
+     port 0
+    }
+    ConnectionClass connection {
+     id 51
+     port 0
+    }
+   }
+  }
+  IOPItemOpDivClass {
+   id 57
+   name "Div 57"
+   tl -542 786
+   children {
+    59 61
+   }
+   inputs {
+    ConnectionClass connection {
+     id 101
+     port 0
+    }
+    ConnectionClass connection {
+     id 58
+     port 1
+    }
+   }
+  }
+  IOPItemOpSmootherClass {
+   id 59
+   name "Smoother 59"
+   tl -302 787
+   children {
+    56
+   }
+   inputs {
+    ConnectionClass connection {
+     id 57
+     port 0
+    }
+   }
+  }
+  IOPItemOpDivClass {
+   id 61
+   name "Div 61"
+   tl -308 884
+   children {
+    86 89
+   }
+   inputs {
+    ConnectionClass connection {
+     id 57
+     port 0
+    }
+    ConnectionClass connection {
+     id 60
+     port 1
+    }
+   }
+  }
+  IOPItemOpDivClass {
+   id 64
+   name "Div 64"
+   tl -553.333 285.556
+   children {
+    63
+   }
+   inputs {
+    ConnectionClass connection {
+     id 65
+     port 1
+    }
+    ConnectionClass connection {
+     id 62
+     port 0
+    }
+   }
+  }
+  IOPItemOpMulClass {
+   id 68
+   name "Mul 68"
+   tl -741.429 1161.429
+   children {
+    70
+   }
+   inputs {
+    ConnectionClass connection {
+     id 66
+     port 0
+    }
+    ConnectionClass connection {
+     id 69
+     port 0
+    }
+   }
+  }
+  IOPItemOpSmootherClass {
+   id 70
+   name "Smoother 70"
+   tl -288.571 1158.572
+   children {
+    67
+   }
+   inputs {
+    ConnectionClass connection {
+     id 68
+     port 0
+    }
+   }
+   "Fade In Time" 120000
+   "Fade Out Time" 120000
+   "Fade In Type" "Power of 1/1.41"
+   "Fade Out Type" "Power of 2"
+   ResetTimerOnNewInput 1
+  }
+  IOPItemOpSmootherClass {
+   id 72
+   name "Smoother 72"
+   tl -285.714 1382.857
+   children {
+    73
+   }
+   inputs {
+    ConnectionClass connection {
+     id 74
+     port 0
+    }
+   }
+   "Fade In Time" 100000
+   "Fade Out Time" 100000
+   "Fade In Type" "Power of 1/1.41"
+   "Fade Out Type" "Power of 2"
+   ResetTimerOnNewInput 1
+  }
+  IOPItemOpMulClass {
+   id 74
+   name "Mul 74"
+   tl -742.857 1380
+   children {
+    72
+   }
+   inputs {
+    ConnectionClass connection {
+     id 66
+     port 0
+    }
+    ConnectionClass connection {
+     id 71
+     port 0
+    }
+   }
+  }
+  IOPItemOpMulClass {
+   id 77
+   name "Mul 77"
+   tl -740 1590
+   children {
+    79
+   }
+   inputs {
+    ConnectionClass connection {
+     id 66
+     port 0
+    }
+    ConnectionClass connection {
+     id 75
+     port 0
+    }
+   }
+  }
+  IOPItemOpMulClass {
+   id 78
+   name "Mul 78"
+   tl -737.143 1797.143
+   children {
+    80
+   }
+   inputs {
+    ConnectionClass connection {
+     id 66
+     port 0
+    }
+    ConnectionClass connection {
+     id 76
+     port 0
+    }
+   }
+  }
+  IOPItemOpSmootherClass {
+   id 79
+   name "Smoother 79"
+   tl -285.714 1590
+   children {
+    82
+   }
+   inputs {
+    ConnectionClass connection {
+     id 77
+     port 0
+    }
+   }
+   "Fade In Time" 100000
+   "Fade Out Time" 100000
+   "Fade In Type" "Power of 1/1.41"
+   "Fade Out Type" "Power of 1/1.41"
+  }
+  IOPItemOpSmootherClass {
+   id 80
+   name "Smoother 80"
+   tl -287.143 1798.571
+   children {
+    81
+   }
+   inputs {
+    ConnectionClass connection {
+     id 78
+     port 0
+    }
+   }
+   "Fade In Time" 80000
+   "Fade Out Time" 80000
+   "Fade In Type" "Power of 1/1.41"
+   "Fade Out Type" "Power of 2"
+  }
+  IOPItemOpMulClass {
+   id 84
+   name "Mul 84"
+   tl -744.762 2021.587
+   children {
+    85 88
+   }
+   inputs {
+    ConnectionClass connection {
+     id 66
+     port 0
+    }
+    ConnectionClass connection {
+     id 83
+     port 0
+    }
+   }
+  }
+  IOPItemOpSmootherClass {
+   id 85
+   name "Smoother 85"
+   tl -507.778 2023.333
+   children {
+    86
+   }
+   inputs {
+    ConnectionClass connection {
+     id 84
+     port 0
+    }
+   }
+   "Fade In Time" 3000
+  }
+  IOPItemOpSumClass {
+   id 86
+   name "Sum 86"
+   tl -285.556 2024.444
+   children {
+    87
+   }
+   inputs {
+    ConnectionClass connection {
+     id 61
+     port 0
+    }
+    ConnectionClass connection {
+     id 85
+     port 0
+    }
+   }
+  }
+  IOPItemOpSmootherClass {
+   id 88
+   name "Smoother 88"
+   tl -507 2147
+   children {
+    89
+   }
+   inputs {
+    ConnectionClass connection {
+     id 84
+     port 0
+    }
+   }
+   "Fade In Time" 4000
+   "Fade Out Time" 1500
+  }
+  IOPItemOpSumClass {
+   id 89
+   name "Sum 89"
+   tl -287 2147
+   children {
+    91
+   }
+   inputs {
+    ConnectionClass connection {
+     id 61
+     port 0
+    }
+    ConnectionClass connection {
+     id 88
+     port 0
+    }
+   }
+  }
+  IOPItemOpMulClass {
+   id 91
+   name "Mul 91"
+   tl -286.25 2278.75
+   children {
+    92
+   }
+   inputs {
+    ConnectionClass connection {
+     id 89
+     port 0
+    }
+    ConnectionClass connection {
+     id 90
+     port 0
+    }
+   }
+  }
+  IOPItemOpMulClass {
+   id 95
+   name "Mul 95"
+   tl -744.286 2532.857
+   children {
+    96
+   }
+   inputs {
+    ConnectionClass connection {
+     id 66
+     port 0
+    }
+    ConnectionClass connection {
+     id 93
+     port 0
+    }
+   }
+  }
+  IOPItemOpSmootherClass {
+   id 96
+   name "Smoother 96"
+   tl -512.857 2532.857
+   children {
+    97
+   }
+   inputs {
+    ConnectionClass connection {
+     id 95
+     port 0
+    }
+   }
+  }
+  IOPItemOpMulClass {
+   id 99
+   name "Mul 99"
+   tl -761.25 2762.5
+   children {
+    100
+   }
+   inputs {
+    ConnectionClass connection {
+     id 66
+     port 0
+    }
+    ConnectionClass connection {
+     id 98
+     port 0
+    }
+   }
+  }
+  IOPItemOpSmootherClass {
+   id 101
+   name "Smoother 101"
+   tl -744.444 783.333
+   children {
+    57
+   }
+   inputs {
+    ConnectionClass connection {
+     id 55
+     port 0
+    }
+   }
+   "Fade In Time" 1200
+   "Fade Out Time" 4000
+   "Fade In Type" "Power of 1.41"
+   "Fade Out Type" "Power of 1.41"
+  }
+ }
+ Outputs {
+  IOPItemOutputClass {
+   id 52
+   name "speed"
+   tl -57 593
+   input 54
+  }
+  IOPItemOutputClass {
+   id 56
+   name "engineRPM"
+   tl -61 788
+   input 59
+  }
+  IOPItemOutputClass {
+   id 63
+   name "fuel1"
+   tl -83.333 284.444
+   input 64
+  }
+  IOPItemOutputClass {
+   id 67
+   name "temperature1"
+   tl -65.714 1158.571
+   input 70
+  }
+  IOPItemOutputClass {
+   id 73
+   name "temperature2"
+   tl -62.857 1382.857
+   input 72
+  }
+  IOPItemOutputClass {
+   id 81
+   name "oilTemperature2"
+   tl -77.143 1798.571
+   input 80
+  }
+  IOPItemOutputClass {
+   id 82
+   name "oilTemperature1"
+   tl -67.143 1590
+   input 79
+  }
+  IOPItemOutputClass {
+   id 87
+   name "oilPressure1"
+   tl -61.111 2025.556
+   input 86
+  }
+  IOPItemOutputClass {
+   id 92
+   name "oilPressure2"
+   tl -57.5 2280
+   input 91
+  }
+  IOPItemOutputClass {
+   id 97
+   name "tirePressure"
+   tl -58.571 2534.286
+   input 96
+  }
+  IOPItemOutputClass {
+   id 100
+   name "ammeter"
+   tl -63.929 2764.464
+   input 99
+  }
+ }
+ compiled IOPCompiledClass {
+  visited {
+   1925 1797 1669 1541 1413 1285 1157 1029 901 2699 1286 2443 2567 1158 1675 2055 1799 1291 1543 646 1163 1415 774 1035 903 518 651 775 390 773 645 519 262 517 389 261 2823 135 391 2187 2315 1030 1931 902 263 134 133 5 11 6
+  }
+  ins {
+   IOPCompiledIn {
+    data {
+     1 3
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 3
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 1441795
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 65539
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 196611
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 262147
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 262147
+    }
+   }
+   IOPCompiledIn {
+    data {
+     7 327683 524291 589827 655363 851971 1245187 1376259
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 327683
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 524291
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 589827
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 655363
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 851971
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 1179651
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 1245187
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 1376259
+    }
+   }
+  }
+  ops {
+   IOPCompiledOp {
+    data {
+     1 2 4 65536 0 0 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     2 131075 196611 4 1441793 0 196608 1
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 65538 2 65537 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     2 983043 1114115 4 65537 0 262144 1
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 131074 4 393216 1 327680 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 393219 4 458752 0 524288 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 196610 2 327681 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 262146 2 524289 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 458755 4 458752 0 589824 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 720899 4 458752 0 655360 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 786435 4 458752 0 720896 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 393218 2 589825 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 327682 2 655361 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     2 917507 1048579 4 458752 0 786432 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 983043 2 851969 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 458754 4 196609 0 917505 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 1114115 2 851969 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 1179651 4 196609 0 1048577 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 524290 4 1114113 0 851968 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 1310723 4 458752 0 917504 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 589826 2 1245185 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 655362 4 458752 0 983040 0
+    }
+   }
+   IOPCompiledOp {
+    data {
+     1 65539 2 131072 0
+    }
+   }
+  }
+  outs {
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+  }
+  processed 50
+  version 2
+  ops_reeval_list {
+   2 6 7 11 12 14 16 20 22
+  }
+ }
+}

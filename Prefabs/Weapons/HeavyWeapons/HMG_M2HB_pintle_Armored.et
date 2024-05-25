@@ -1,0 +1,15 @@
+GenericEntity : "{9CF19D872D4D1C00}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_pintle.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  SlotManagerComponent "{5C888172C28FADDA}" {
+   Slots {
+    RegisteringComponentSlotInfo Armor {
+     PivotID "w_root"
+     Offset 0 0 0.2632
+     Prefab "{26559189B5711270}Prefabs/Vehicles/Wheeled/JLTV/VehParts/JLTV_Weapon_Armor.et"
+     RegisterDamage 1
+    }
+   }
+  }
+ }
+}

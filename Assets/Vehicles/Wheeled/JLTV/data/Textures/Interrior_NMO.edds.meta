@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{20633759F738C30F}Assets/Vehicles/Wheeled/JLTV/data/Textures/Interrior_NMO.edds"
+ Configurations {
+  TIFFResourceClass PC : "{A968DA7F9A1E3A3E}Configs/System/ResourceTypes/PC/TextureNType.conf" {
+   MaxSize "1024"
+  }
+  TIFFResourceClass XBOX_ONE : "{7F6A4D372443A88D}Configs/System/ResourceTypes/XBOX_ONE/TextureNType.conf" {
+   MaxSize "1024"
+  }
+  TIFFResourceClass XBOX_SERIES : "{065D289C7FF8B20D}Configs/System/ResourceTypes/XBOX_SERIES/TextureNType.conf" {
+   MaxSize "1024"
+  }
+  TIFFResourceClass PS4 : "{29DF4A6CBBABE916}Configs/System/ResourceTypes/PS4/TextureNType.conf" {
+   MaxSize "1024"
+  }
+  TIFFResourceClass HEADLESS : "{AFD658E4D0EB5FBC}Configs/System/ResourceTypes/HEADLESS/TextureNType.conf" {
+   MaxSize "1024"
+  }
+ }
+}

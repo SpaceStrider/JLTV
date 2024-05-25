@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{B5445B8E03A39FDC}Assets/Weapons/HeavyWeapons/M230LF/data/Textures/M230_LF_BCR.edds"
+ Configurations {
+  TIFFResourceClass PC {
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass XBOX_ONE : PC {
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass XBOX_SERIES : PC {
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass PS4 : PC {
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass HEADLESS : PC {
+   ColorSpace ToSRGB
+  }
+ }
+}

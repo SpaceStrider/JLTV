@@ -1,0 +1,77 @@
+GameProject {
+ ID "JLTV"
+ GUID "5C721177A220B42F"
+ TITLE "JLTV"
+ Dependencies {
+  "58D0FB3206B6F859" "5E389BB9F58B79A6"
+ }
+ Configurations {
+  GameProjectConfig HEADLESS {
+  }
+  GameProjectConfig PC {
+   WidgetManagerSettings WidgetManagerSettings "{AC4BE58770485E02}" {
+    StringTables {
+     StringTableDefinition "{5C8891407E9C66EE}" {
+      StringTableSource "{3BD88BBF304360B8}Language/JLTV_Stringtable.st"
+      Languages {
+       LanguageDefinition "{5C88914078559A98}" {
+        Code "cs_cz"
+        StringTableRuntime "{256E767C2CC3036C}Language/JLTV_Stringtable.cs_cz.conf"
+       }
+       LanguageDefinition "{5C88914078559AF2}" {
+        Code "de_de"
+        StringTableRuntime "{F0106C4F3F60124C}Language/JLTV_Stringtable.de_de.conf"
+       }
+       LanguageDefinition "{5C88914078559AC0}" {
+        Code "en_us"
+        StringTableRuntime "{AEE0E6045593174D}Language/JLTV_Stringtable.en_us.conf"
+       }
+       LanguageDefinition "{5C88914078559AD3}" {
+        Code "es_es"
+        StringTableRuntime "{6BACAB8DBB917C52}Language/JLTV_Stringtable.es_es.conf"
+       }
+       LanguageDefinition "{5C88914078559A26}" {
+        Code "fr_fr"
+        StringTableRuntime "{D0045EBA5D129F50}Language/JLTV_Stringtable.fr_fr.conf"
+       }
+       LanguageDefinition "{5C88914078559A35}" {
+        Code "it_it"
+        StringTableRuntime "{5018D18EF0301CA9}Language/JLTV_Stringtable.it_it.conf"
+       }
+       LanguageDefinition "{5C88914078559A0A}" {
+        Code "ja_jp"
+        StringTableRuntime "{40036C1CCE412C02}Language/JLTV_Stringtable.ja_jp.conf"
+       }
+       LanguageDefinition "{5C88914078559A19}" {
+        Code "ko_kr"
+        StringTableRuntime "{E0BD44B05D6C2F3D}Language/JLTV_Stringtable.ko_kr.conf"
+       }
+       LanguageDefinition "{5C88914078559A6F}" {
+        Code "pl_pl"
+        StringTableRuntime "{BCCCE24AE383B341}Language/JLTV_Stringtable.pl_pl.conf"
+       }
+       LanguageDefinition "{5C88914078559A65}" {
+        Code "pt_br"
+        StringTableRuntime "{69BB7886D87D79FB}Language/JLTV_Stringtable.pt_br.conf"
+       }
+       LanguageDefinition "{5C88914078559A79}" {
+        Code "ru_ru"
+        StringTableRuntime "{3CFA6C2E45041C8D}Language/JLTV_Stringtable.ru_ru.conf"
+       }
+       LanguageDefinition "{5C88914078559BE5}" {
+        Code "zh_cn"
+        StringTableRuntime "{6C1257E5108A72C5}Language/JLTV_Stringtable.zh_cn.conf"
+       }
+      }
+     }
+    }
+   }
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+ }
+}

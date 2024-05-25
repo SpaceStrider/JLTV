@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AlphaMul 0.8
+ BlendMode AlphaBlend
+ EmissiveMap "{5F8A3913E68E143B}Assets/Vehicles/Wheeled/JLTV/data/Textures/Glass_Emissive.edds"
+ BCRMap "{3FBEAD868AF6C594}Assets/Vehicles/Wheeled/JLTV/data/Textures/Glass_BCR.edds"
+}

@@ -1,0 +1,31 @@
+MatPBRMulti {
+ MaskMap "{C3E9002CD58608D2}Assets/Vehicles/Wheeled/JLTV/data/Textures/Main_Body2_GLOBAL_MASK.edds"
+ VFXMap "{9C8B040A7A3E9AFF}Assets/Vehicles/Wheeled/JLTV/data/Textures/Main_Body_VFX.edds"
+ MudOpacity 0.866
+ MudColor 0.808 0.808 0.808 1
+ MudDetNormal 0.25
+ MudBCRMap "{D608FA6C45C55A6F}Assets/_SharedData/Dirt/ST_Dirt02_BCR.edds"
+ MudNMOMap "{0EB8937BD911AEC9}Assets/_SharedData/Dirt/ST_Dirt_Sand_NMO.edds"
+ MudMaskMap "{441DC3A3D68D971E}Assets/_SharedData/DetailMask/ST_Metal_Peel_01_Mask1.edds"
+ MudUVTransform MatUVTransform "{5C89748CEBEA35EA}" {
+  TilingU 5
+  TilingV 5
+ }
+ DirtOpacity 0.364
+ DirtLayerSharpness 3.794
+ DirtColor 0.051 0.031 0.02 1
+ DirtRoughness 1
+ DirtMaskMap "{8A50472D717443E4}Assets/_SharedData/DetailMask/ST_Dirt_02_Mask1.edds"
+ DirtUVTransform MatUVTransform "{5C89748CE8853457}" {
+  TilingU 5
+  TilingV 5
+ }
+ Color_1 0.733 0.733 0.733 1
+ BCR_1 "{9B97AA81EF1AAA3C}Assets/_SharedData/Dirt/ST_destruct_rust_BCR.edds"
+ NMO_1 "{EED041FE9CB208F1}Assets/_SharedData/Dirt/ST_Dirt02_NMO.edds"
+ UVTransform_1 MatUVTransform "{5C89748CF8F236C7}" {
+  TilingU 6
+  TilingV 6
+ }
+ DetNormal_1 2
+}

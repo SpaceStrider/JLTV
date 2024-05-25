@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{41F4B0594B760AD2}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII_Black.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

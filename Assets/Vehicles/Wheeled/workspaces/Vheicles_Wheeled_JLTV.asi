@@ -1,0 +1,6 @@
+AnimSetInstanceSource "{612CB633A4F16501}" {
+ Template "{7F633C1C12A72901}Assets/Vehicles/Wheeled/workspaces/Vehicles_Wheeled_Template.ast"
+ ParentTemplates {
+  "{1F5ACD5F30AD7132}Assets/Vehicles/Wheeled/workspaces/Vehicles_Wheeled_Ural.asi"
+ }
+}

@@ -1,0 +1,20 @@
+MatPBRBasicGlass {
+ Color 0.147 0.147 0.147 1
+ SpecularIBL 0.279 0.279 0.279 1
+ AlphaMul 0.5
+ BlendMode AlphaBlend
+ RoughnessScale 1.2
+ MetalnessScale 0.4
+ DielectricReflectance 0.08
+ BCRMap "{3FBEAD868AF6C594}Assets/Vehicles/Wheeled/JLTV/data/Textures/Glass_BCR.edds"
+ OpacityMap "{3FBEAD868AF6C594}Assets/Vehicles/Wheeled/JLTV/data/Textures/Glass_BCR.edds"
+ NMOMap "{BAF0FA454C3E74FC}Assets/Vehicles/Wheeled/M923A1/Data/M923A1_Base_glass_NMO.edds"
+ DetailNormalPower 0.3
+ DetailNormalMap "{030148B4726411BA}Assets/_SharedData/Noises/ST_NoisePerlin_01_N.edds"
+ DetailNormalMapUVTransform MatUVTransform "{5E3A6928B7DD1CDB}" {
+  TilingU 0.03
+  TilingV 0.05
+ }
+ FresnelPower 1.5
+ FresnelBias 0.15
+}

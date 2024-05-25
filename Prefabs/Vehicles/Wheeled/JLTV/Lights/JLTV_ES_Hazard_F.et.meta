@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{0362905243D4FED1}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Hazard_F.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

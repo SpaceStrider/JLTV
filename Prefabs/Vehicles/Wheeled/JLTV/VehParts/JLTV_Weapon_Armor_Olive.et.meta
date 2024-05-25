@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{C66D7B4992A75133}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Weapon_Armor_Olive.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

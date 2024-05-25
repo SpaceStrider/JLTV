@@ -1,0 +1,10 @@
+MatPBRBasic {
+ BCRMap "{B5445B8E03A39FDC}Assets/Weapons/HeavyWeapons/M230LF/data/Textures/M230_LF_BCR.edds"
+ NMOMap "{8D9CE01CDAD4CD42}Assets/Weapons/HeavyWeapons/M230LF/data/Textures/M230_LF_NMO.edds"
+ DetailNormalPower 1
+ DetailNormalMap "{0470164F98BC8DD2}Assets/_SharedData/Metal/ST_MetalBare_01_NMO.edds"
+ DetailNormalMapUVTransform MatUVTransform "{5C7CAB1F7D4CA835}" {
+  TilingU 10
+  TilingV 10
+ }
+}

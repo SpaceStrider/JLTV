@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F0160E77163C4AE5}Assets/Vehicles/Wheeled/JLTV/data/Textures/M230_LF_NMO.edds"
+ Configurations {
+  TIFFResourceClass PC {
+  }
+  TIFFResourceClass XBOX_ONE : PC {
+  }
+  TIFFResourceClass XBOX_SERIES : PC {
+  }
+  TIFFResourceClass PS4 : PC {
+  }
+  TIFFResourceClass HEADLESS : PC {
+  }
+ }
+}

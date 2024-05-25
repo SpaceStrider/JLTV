@@ -1,0 +1,16 @@
+MatPBRBasicGlass {
+ Color 1 1 1 1
+ Emissive 0.937 0.91 0.82 1
+ EmissiveLV -12
+ ZBias 2
+ SurfaceProperties "{3DC7C8A918E3F4A5}Common/Materials/Game/glass.gamemat"
+ BlendMode AlphaBlend
+ DielectricReflectance 0.05
+ EmissiveMap "{9C57C2E24CC46E55}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Windows_BCR.edds"
+ BCRMap "{E05D515EDE26551C}Assets/_SharedData/Glass/ST_Glass_Dirt_01_BCR.edds"
+ OpacityMap "{60972A1E2BFE9D6F}Assets/_SharedData/Glass/ST_Glass_Dirt_01_A.edds"
+ GlobalMapsUVTransform MatUVTransform "{5C883228649C85A8}" {
+  TilingU 4
+  TilingV 4
+ }
+}

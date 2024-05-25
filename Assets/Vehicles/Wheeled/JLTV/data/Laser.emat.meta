@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F5A2989F3EA22777}Assets/Vehicles/Wheeled/JLTV/data/Laser.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

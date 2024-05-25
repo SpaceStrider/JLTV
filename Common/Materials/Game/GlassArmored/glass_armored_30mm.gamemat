@@ -1,0 +1,6 @@
+GameMaterial : "{298A016BA1025E17}Common/Materials/Game/glass_armored.gamemat" {
+ BallisticInfo BallisticInfo "{527AC420EB22B76E}" {
+  ThicknessOverride Value
+  Thickness 20
+ }
+}

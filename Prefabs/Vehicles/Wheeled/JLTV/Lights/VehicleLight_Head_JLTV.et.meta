@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{00EF649B4A1C872B}Prefabs/Vehicles/Wheeled/M923A1/Lights/VehicleLight_Head_JLTV.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{3F9064A8797E91D7}Assets/Vehicles/Wheeled/JLTV/data/Lights.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

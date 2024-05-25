@@ -1,0 +1,17 @@
+GenericEntity : "{53B38C68C388EF3D}Prefabs/Vehicles/Wheeled/JLTV/VehParts/JLTV_Roof_Base.et" {
+ ID "5C887105037669F0"
+ components {
+  MeshObject "{5C887105037669C5}" {
+   Object "{5111E82D3DA6B352}Assets/Vehicles/Wheeled/JLTV/JLTV_SpareWheel.xob"
+   Materials {
+    MaterialAssignClass "{5C8E56A0B1F9F647}" {
+     SourceMaterial "Main_Body"
+     AssignedMaterial "{545C8860A582F3EF}Assets/Vehicles/Wheeled/JLTV/data/Main_Body_Green.emat"
+    }
+   }
+  }
+  RigidBody "{5C887105037669DA}" {
+   Enabled 1
+  }
+ }
+}

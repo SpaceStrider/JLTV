@@ -1,0 +1,8 @@
+GameEntity : "{A50B7F75B249F351}Prefabs/Vehicles/Core/Lights/VehicleEmissiveSurface_Base.et" {
+ ID "5C7478F5ED8F591D"
+ components {
+  MeshObject "{54DEF48745980A1F}" {
+   Object "{8A8AF296084EBB3D}Assets/Vehicles/Wheeled/JLTV/Lights/Running_RL.xob"
+  }
+ }
+}

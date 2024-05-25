@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{2E721582DC722A53}Assets/Vehicles/Wheeled/workspaces/Vheicles_Wheeled_JLTV.asi"
+ Configurations {
+  AnimSetInstanceResourceClass PC {
+  }
+  AnimSetInstanceResourceClass XBOX_ONE : PC {
+  }
+  AnimSetInstanceResourceClass XBOX_SERIES : PC {
+  }
+  AnimSetInstanceResourceClass PS4 : PC {
+  }
+  AnimSetInstanceResourceClass HEADLESS : PC {
+  }
+ }
+}

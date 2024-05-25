@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{40B7EA05569B9FDC}Assets/Vehicles/Wheeled/JLTV/data/M230_LF_Black.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

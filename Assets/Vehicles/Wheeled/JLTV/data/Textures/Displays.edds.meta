@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{79037885D7B9ED69}Assets/Vehicles/Wheeled/JLTV/data/Textures/Displays.edds"
+ Configurations {
+  TIFFResourceClass PC {
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass XBOX_ONE : PC {
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass XBOX_SERIES : PC {
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass PS4 : PC {
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass HEADLESS : PC {
+   ColorSpace ToSRGB
+  }
+ }
+}

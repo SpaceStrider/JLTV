@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{93C40485433E10E4}Prefabs/Vehicles/Wheeled/JLTV/Door_R01.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

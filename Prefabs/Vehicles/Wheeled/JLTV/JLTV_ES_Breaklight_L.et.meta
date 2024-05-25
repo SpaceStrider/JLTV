@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{DB02A4EF2B2F234C}Prefabs/Vehicles/Wheeled/BTR70/Lights/JLTV_ES_Breaklight_L.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

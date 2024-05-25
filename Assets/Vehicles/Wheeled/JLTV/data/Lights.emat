@@ -1,0 +1,7 @@
+MatPBRBasic {
+ Emissive 1 1 1 0
+ EmissiveLV 6
+ ApplyAlbedoToEmissive 1
+ BCRMap "{3FBEAD868AF6C594}Assets/Vehicles/Wheeled/JLTV/data/Textures/Glass_BCR.edds"
+ NMOMap "{076616145381970A}Assets/Vehicles/Wheeled/JLTV/data/Textures/Glass_NMO.edds"
+}

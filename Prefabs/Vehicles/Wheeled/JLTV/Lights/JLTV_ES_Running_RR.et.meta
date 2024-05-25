@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F840212E2F138649}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Running_RR.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

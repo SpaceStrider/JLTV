@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{02C9C79B56106DFD}Prefabs/Weapons/HeavyWeapons/HMG_M230LF.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

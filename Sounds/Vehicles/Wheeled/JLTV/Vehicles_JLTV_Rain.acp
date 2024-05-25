@@ -1,0 +1,289 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 82957
+   name "Signal 81"
+   tl -158.651 394.302
+   res "{7064934CA830B18A}Sounds/_SharedData/Signals/Vehicles/Vehicles_Rain.sig"
+   inputsport {
+    1 35 40 48 49 52 60
+   }
+   outputsport {
+    2 39
+   }
+   inputvalues {
+    1 0 0 0 0 0 1
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1 1 1 10
+   }
+  }
+  SignalClass {
+   id 86029
+   name "Signal 4"
+   tl 305.181 122.435
+   res "{D4A1555B02A77EDA}Sounds/_SharedData/Signals/Vehicles/Vehicles_Occlusion_OutsideVehicleSource.sig"
+   inputsport {
+    30 32 45 55 57 94 103 111
+   }
+   outputsport {
+    2 40 43 47 50 74
+   }
+   inputvalues {
+    0 1 1 0 0 400 1000 0
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1 1 10000 10000 1
+   }
+  }
+ }
+ sounds {
+  SoundClass {
+   id 81929
+   name "SOUND_VEHICLE_RAIN_LP"
+   version 5
+   tl 500.222 391.46
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 82957
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 79890
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1
+   }
+   outState 61451
+   outStatePort 17415
+   transformation Offset
+   offset 0 1.9 0
+   Type Box
+   Scale 2.2 0.5 5.2
+  }
+ }
+ mixers {
+  MixerClass {
+   id 61451
+   name "OutputState"
+   version 4
+   tl 706.635 388.61
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 17415
+     links {
+      ConnectionClass connection {
+       id 81929
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    256
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "ANM_Footsteps" "ANM_Voice" "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialogue" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialogue_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct"
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 79890
+   name "Shader 78"
+   version 5
+   tl 306.333 391.556
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 85020
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 80915
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 88085
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 83972
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7
+   }
+   ITD 0
+  }
+ }
+ amplitudes {
+  AmplitudeClass : "{B8DF212957DF97E8}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_20-15.conf" {
+   id 80915
+   version 5
+   tl 308.333 -22.096
+   parent "{B8DF212957DF97E8}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_20-15.conf"
+  }
+ }
+ frequency {
+  FrequencyClass : "{0005FE42A6D80399}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_DynamicUpdate.conf" {
+   id 88085
+   version 5
+   tl 308.143 50
+   parent "{0005FE42A6D80399}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_DynamicUpdate.conf"
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 86029
+       port 74
+      }
+     }
+    }
+   }
+   pi {
+    16
+   }
+   pu {
+    16
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 83972
+   name "Rain Metal"
+   version 7
+   tl 65.46 391.556
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 82957
+       port 2
+      }
+     }
+    }
+   }
+   pi {
+    1
+   }
+   pu {
+    1
+   }
+   Volume -7
+   "Pitch variance" 2
+   "Loop count" 255
+   "Infinite loop" 1
+   "Termination Fade Out" 300
+   "Random start offset" 1
+   "Fade in time" 300
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E1B3B89561DE78CA}Sounds/Vehicles/_SharedData/Rain/Samples/Vehicles_Rain_Metal_Heavy_EXT_LP.wav"
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass : "{1C61C4CA5B31B4CB}Sounds/_SharedData/Configs/Spatiality/Vehicles/Spatiality_Vehicles_Rain.conf" {
+   id 85020
+   version 5
+   tl 308.714 -98
+   parent "{1C61C4CA5B31B4CB}Sounds/_SharedData/Configs/Spatiality/Vehicles/Spatiality_Vehicles_Rain.conf"
+   Curve0 {
+    CurvePoint "1" {
+     X 0
+     Shape Linear
+    }
+    CurvePoint "2" {
+     X 0
+     Y 0
+     Shape Linear
+    }
+    CurvePoint "2" {
+     X 0
+     Y 0
+     Shape Linear
+    }
+    CurvePoint "3" {
+    }
+    CurvePoint "4" {
+    }
+    CurvePoint "5" {
+    }
+    CurvePoint "6" {
+    }
+    CurvePoint "7" {
+    }
+    CurvePoint "8" {
+    }
+    CurvePoint "9" {
+    }
+    CurvePoint "10" {
+    }
+    CurvePoint "11" {
+    }
+    CurvePoint "12" {
+     X 0.1
+     Shape Exponential
+    }
+    CurvePoint "13" {
+     X 0.2
+     Y 0.6
+     Shape Exponential
+    }
+    CurvePoint "14" {
+     X 5
+     Y 1
+     Shape Exponential
+    }
+   }
+  }
+ }
+ version 1
+ listenerWindowModel "{635E5DC476BD97EE}Assets/Vehicles/Wheeled/JLTV/JLTV_Base.xob"
+}

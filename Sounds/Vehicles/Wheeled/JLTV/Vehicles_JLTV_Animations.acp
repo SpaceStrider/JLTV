@@ -1,0 +1,2360 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 19469
+   name "Signal 1"
+   tl 300 -260
+   res "{63CE53388AF9EF01}Sounds/_SharedData/Signals/OneSignal/animSelector.sig"
+   inputsport {
+    3
+   }
+   outputsport {
+    4
+   }
+   inputvalues {
+    0
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    100
+   }
+  }
+  SignalClass {
+   id 45069
+   name "Signal 44"
+   tl 716.429 1815.747
+   res "{52A13EC17B82C242}Sounds/_SharedData/Signals/OneSignal/speed.sig"
+   inputsport {
+    1
+   }
+   outputsport {
+    2 3
+   }
+   inputvalues {
+    0
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    1
+   }
+  }
+  SignalClass {
+   id 61453
+   name "Signal 60"
+   tl 504 142.653
+   res "{FC5C9C507476D6B9}Sounds/_SharedData/Signals/Vehicles/Vehicles_Occlusion_InsideVehicleSource.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 15
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass connection {
+         id 77836
+         port 1
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 2 3 15
+   }
+   outputsport {
+    7
+   }
+   inputvalues {
+    0 1 1 0.5
+   }
+   inputvaluesmin {
+    0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1
+   }
+  }
+  SignalClass {
+   id 72717
+   name "Signal Random01"
+   tl -577.193 1227.727
+   res "{F37178C11484BD32}Sounds/_SharedData/Signals/Vehicles/Vehicles_GearShift_Random01.sig"
+   inputsport {
+    12 15
+   }
+   outputsport {
+    20 22
+   }
+   inputvalues {
+    1 1
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    1 1
+   }
+  }
+  SignalClass {
+   id 74765
+   name "Signal 66"
+   tl 997.721 -219.191
+   res "{79530FEEF84FABB7}Sounds/_SharedData/Signals/Vehicles/Vehicles_Reverb_OutsideVehicleSource.sig"
+   inputsport {
+    20 24 29
+   }
+   outputsport {
+    5 6 42
+   }
+   inputvalues {
+    0 1 0
+   }
+   inputvaluesmin {
+    0 0 0
+   }
+   inputvaluesmax {
+    1 1 1
+   }
+  }
+  SignalClass {
+   id 75789
+   name "Signal 64"
+   tl 997.721 145.942
+   res "{A0E828E84363A3A0}Sounds/_SharedData/Signals/Vehicles/Vehicles_Reverb_InsideVehicleSource.sig"
+   inputsport {
+    20 24 29 36 37 39
+   }
+   outputsport {
+    5 6
+   }
+   inputvalues {
+    0 0 0 0 0 0
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1 1 1
+   }
+  }
+  SignalClass {
+   id 78861
+   name "Signal 68"
+   tl 504 -437.753
+   res "{486BCE6E22132793}Sounds/_SharedData/Signals/Vehicles/Vehicles_Occlusion_OutsideVehicleSourceNoCabinAttenuation.sig"
+   inputsport {
+    30 32 45 55 57
+   }
+   outputsport {
+    2 47
+   }
+   inputvalues {
+    0 0 0 0 0
+   }
+   inputvaluesmin {
+    0 0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1 1
+   }
+  }
+ }
+ filters {
+  FilterClass : "{F2D014B87636D6C8}Sounds/_SharedData/Configs/Filter/Vehicles/Filter_Vehicles_Actions_Interior.conf" {
+   id 60438
+   name "Filter 59"
+   tl 504 288.347
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 61453
+         port 7
+        }
+       }
+      }
+     }
+    }
+   }
+   parent "{F2D014B87636D6C8}Sounds/_SharedData/Configs/Filter/Vehicles/Filter_Vehicles_Actions_Interior.conf"
+  }
+  FilterClass : "{F7147E886D6CD57F}Sounds/_SharedData/Configs/Filter/Vehicles/Filter_Vehicles_Engine_Interior.conf" {
+   id 79894
+   name "Filter Vehicle Interior"
+   tl 504 -270.247
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 78861
+         port 2
+        }
+       }
+      }
+     }
+    }
+   }
+   parent "{F7147E886D6CD57F}Sounds/_SharedData/Configs/Filter/Vehicles/Filter_Vehicles_Engine_Interior.conf"
+   volume_dB 0
+  }
+ }
+ sounds {
+  SoundClass {
+   id 1033
+   name "SOUND_VEHICLE"
+   tl 716.429 -172.727
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 11282
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -8
+   priority 80
+   outState 24587
+   outStatePort 17415
+   transformation Bone
+  }
+  SoundClass {
+   id 32777
+   name "SOUND_VEHICLE_CLOSE"
+   tl 716.429 389.277
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 33810
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -15
+   priority 75
+   outState 24587
+   outStatePort 17415
+   transformation Bone
+  }
+  SoundClass {
+   id 41993
+   name "SOUND_AIRRELEASE"
+   comment "-40 LUFS"
+   tl 716.429 1923.833
+   ctl 0 -21
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 43026
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 45069
+         port 3
+        }
+       }
+      }
+     }
+    }
+   }
+   priority 70
+   outState 24587
+   outStatePort 17415
+   delayTime 1000
+   transformation Bone
+   boneName "v_axle_01"
+   type "One shot"
+   threshold -3
+   reset -20
+  }
+  SoundClass {
+   id 51209
+   name "SOUND_VEHICLE_CLOSE_LIGHT_ON"
+   tl 716.429 570.555
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 49170
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 3
+     conn {
+      ConnectionsClass connections {
+       id 5
+       links {
+        ConnectionClass connection {
+         id 52233
+         port 4
+        }
+       }
+      }
+     }
+    }
+   }
+   volume_dB -15
+   priority 70
+   outState 24587
+   outStatePort 17415
+   transformation Bone
+   boneName "v_light_switch"
+   eventType "OnStart - Stop"
+  }
+  SoundClass {
+   id 52233
+   name "SOUND_VEHICLE_CLOSE_LIGHT_OFF"
+   tl 716.429 748.333
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 50194
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 3
+     conn {
+      ConnectionsClass connections {
+       id 5
+       links {
+        ConnectionClass connection {
+         id 51209
+         port 4
+        }
+       }
+      }
+     }
+    }
+   }
+   volume_dB -15
+   priority 70
+   outState 24587
+   outStatePort 17415
+   transformation Bone
+   boneName "Lights"
+   eventType "OnStart - Stop"
+  }
+  SoundClass {
+   id 58377
+   name "SOUND_VEHICLE_HANDBRAKE"
+   tl 716.429 2167.284
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 57362
+       port 65
+      }
+     }
+    }
+   }
+   priority 70
+   outState 24587
+   outStatePort 17415
+   transformation Bone
+   boneName "v_handbrake"
+  }
+  SoundClass {
+   id 63497
+   name "SOUND_TURNSIGNAL_ON"
+   tl 717.858 2504.786
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 65554
+       port 65
+      }
+     }
+    }
+   }
+   priority 70
+   outState 24587
+   outStatePort 17415
+   eventNoRepeatTimeMSec 100
+   transformation Bone
+   boneName "v_steering_wheel"
+  }
+  SoundClass {
+   id 67593
+   name "SOUND_TURNSIGNAL_OFF"
+   tl 716.429 2692.096
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 62482
+       port 65
+      }
+     }
+    }
+   }
+   priority 70
+   outState 24587
+   outStatePort 17415
+   eventNoRepeatTimeMSec 100
+   transformation Bone
+   boneName "v_steering_wheel"
+  }
+  SoundClass {
+   id 81929
+   name "SOUND_CONTAINER_CLOSE"
+   tl 716.429 1626.875
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 82962
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 3
+     conn {
+      ConnectionsClass connections {
+       id 5
+       links {
+        ConnectionClass connection {
+         id 85001
+         port 4
+        }
+       }
+      }
+     }
+    }
+   }
+   priority 70
+   outState 24587
+   outStatePort 17415
+   transformation Offset
+   offset 0 1.4 -4.5
+   eventType "OnStart - Stop"
+  }
+  SoundClass {
+   id 85001
+   name "SOUND_CONTAINER_OPEN"
+   tl 716.429 1428.625
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 86034
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 3
+     conn {
+      ConnectionsClass connections {
+       id 5
+       links {
+        ConnectionClass connection {
+         id 81929
+         port 4
+        }
+       }
+      }
+     }
+    }
+   }
+   priority 70
+   outState 24587
+   outStatePort 17415
+   transformation Offset
+   offset 0 1.4 -4.5
+   eventType "OnStart - Stop"
+  }
+  SoundClass {
+   id 88073
+   name "SOUND_VEHICLE_GEARSHIFT"
+   tl 716.429 1089.722
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 89106
+       port 65
+      }
+     }
+    }
+   }
+   priority 70
+   outState 24587
+   outStatePort 17415
+   transformation Bone
+   boneName "v_gearshift"
+  }
+ }
+ buses {
+  BusClass {
+   id 69639
+   name "Bus 53"
+   tl -148.925 1173.304
+   conns {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 70660
+       port 65
+      }
+      ConnectionClass connection {
+       id 31748
+       port 65
+      }
+     }
+    }
+   }
+  }
+ }
+ selectors {
+  SelectorClass {
+   id 4102
+   name "Selector 1"
+   tl 299 -172.727
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 19469
+         port 4
+        }
+       }
+      }
+     }
+    }
+   }
+   ports {
+    PortClass port1 {
+     max 1
+    }
+    PortClass port2 {
+     min 1
+     max 2
+    }
+    PortClass port3 {
+     min 2
+     max 3
+    }
+    PortClass port4 {
+     min 3
+     max 4
+    }
+   }
+   iopPorts {
+    IOPConnectionClass iopConnection {
+     port 215688922
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 22532
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 215688923
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 21508
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 215688924
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 20484
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 215688925
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 26628
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  SelectorClass {
+   id 35846
+   name "Selector 35"
+   tl 311.5 392
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 19469
+         port 4
+        }
+       }
+      }
+     }
+    }
+   }
+   ports {
+    PortClass port1 {
+     max 1
+    }
+    PortClass port2 {
+     min 1
+     max 5
+    }
+    PortClass port3 {
+     min 5
+     max 6
+    }
+    PortClass port4 {
+     min 6
+     max 7
+    }
+   }
+   iopPorts {
+    IOPConnectionClass iopConnection {
+     port 215688922
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 27652
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 215688923
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 28676
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 215688924
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 39940
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 215688925
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 40964
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  SelectorClass : "{C108E8A69EE275FA}Sounds/_SharedData/Configs/Selector/Vehicles/Selector_Vehicles_HandBrakeOnOff.conf" {
+   id 56326
+   name "Selector 55"
+   tl 317.833 2168.183
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 19469
+         port 4
+        }
+       }
+      }
+     }
+    }
+   }
+   parent "{C108E8A69EE275FA}Sounds/_SharedData/Configs/Selector/Vehicles/Selector_Vehicles_HandBrakeOnOff.conf"
+   ports {
+    PortClass handbrakeOn {
+    }
+    PortClass handbrakeOff {
+     max 10
+     default 1
+    }
+   }
+   iopPorts {
+    IOPConnectionClass iopConnection {
+     port 427888577
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 55300
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 799491619
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 54276
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ mixers {
+  MixerClass {
+   id 24587
+   name "OutputState"
+   tl 997.721 461.364
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   iops {
+    IOPConnectionClass iopConnection {
+     port 17415
+     conn {
+      ConnectionsClass connections {
+       id 5
+       links {
+        ConnectionClass connection {
+         id 1033
+         port 65
+        }
+        ConnectionClass connection {
+         id 32777
+         port 65
+        }
+        ConnectionClass connection {
+         id 41993
+         port 65
+        }
+        ConnectionClass connection {
+         id 51209
+         port 65
+        }
+        ConnectionClass connection {
+         id 52233
+         port 65
+        }
+        ConnectionClass connection {
+         id 58377
+         port 65
+        }
+        ConnectionClass connection {
+         id 63497
+         port 65
+        }
+        ConnectionClass connection {
+         id 67593
+         port 65
+        }
+        ConnectionClass connection {
+         id 81929
+         port 65
+        }
+        ConnectionClass connection {
+         id 85001
+         port 65
+        }
+        ConnectionClass connection {
+         id 88073
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 152583
+     conn {
+      ConnectionsClass connections {
+       id 25
+       links {
+        ConnectionClass connection {
+         id 76829
+         port 65
+        }
+        ConnectionClass connection {
+         id 73757
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 197639
+     conn {
+      ConnectionsClass connections {
+       id 25
+       links {
+        ConnectionClass connection {
+         id 87069
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "ANM_Footsteps" "ANM_Voice" "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialogue" "Music" "ENV_Doors" "UI" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialogue_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "ENV_AMB_3D_Reverb_Exterior"
+   }
+  }
+ }
+ constants {
+  ConstantClass {
+   id 77836
+   name "Constant 67"
+   comment ""
+   tl 304.333 214.333
+   ctl 0 0
+   parent ""
+   Metadata ""
+   "Constant values" {
+    IOPConstantsValueClass "1" {
+     Key "VehicleCoverage"
+     Value 1
+     Port 1
+    }
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 11282
+   name "Shader 1"
+   tl 504 -172.727
+   conns {
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 4102
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 12307
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 79894
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ShaderClass {
+   id 33810
+   name "Shader 2"
+   tl 504 390.262
+   conns {
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 35846
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 38931
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 60438
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ShaderClass {
+   id 43026
+   name "Shader 3"
+   tl 504 1922.262
+   conns {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 47108
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 12307
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 79894
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ShaderClass {
+   id 49170
+   name "Shader 48"
+   tl 504 570.833
+   conns {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 39940
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 38931
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 60438
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ShaderClass {
+   id 50194
+   name "Shader 49"
+   tl 504 750.833
+   conns {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 40964
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 38931
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 60438
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ShaderClass {
+   id 57362
+   name "SOUND_VEHICLE_HANDBRAKE"
+   tl 504 2169.282
+   conns {
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 56326
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 90131
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 60438
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ShaderClass {
+   id 62482
+   name "SOUND_TURNSIGNAL_OFF"
+   tl 504 2688.318
+   conns {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 68612
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 38931
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 60438
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ShaderClass {
+   id 65554
+   name "SOUND_TURNSIGNAL_ON"
+   tl 504 2505.77
+   conns {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 64516
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 38931
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 60438
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ShaderClass {
+   id 82962
+   name "Shader 4"
+   tl 504 1626.125
+   conns {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 83972
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 79894
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 90131
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ShaderClass {
+   id 86034
+   name "Shader 4"
+   tl 504 1429.875
+   conns {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 80900
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 90131
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 79894
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ShaderClass {
+   id 89106
+   name "Shader 43"
+   tl 504 1090.278
+   conns {
+    ConnectionsClass connections {
+     id 20
+     links {
+      ConnectionClass connection {
+       id 29720
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 53276
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 90131
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 60438
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 13333
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass : "{9F8145144171C64B}Sounds/_SharedData/Configs/Amplitude/_SharedFolder/Amplitude_10-5.conf" {
+   id 12307
+   tl 504 -583.75
+   parent "{9F8145144171C64B}Sounds/_SharedData/Configs/Amplitude/_SharedFolder/Amplitude_10-5.conf"
+  }
+  AmplitudeClass : "{C97DEFA6B88F6DE9}Sounds/_SharedData/Configs/Amplitude/_SharedFolder/Amplitude_25-20.conf" {
+   id 38931
+   tl 504 67.929
+   parent "{C97DEFA6B88F6DE9}Sounds/_SharedData/Configs/Amplitude/_SharedFolder/Amplitude_25-20.conf"
+  }
+  AmplitudeClass : "{F1CC7B4D741028C3}Sounds/_SharedData/Configs/Amplitude/_SharedFolder/Amplitude_15-10.conf" {
+   id 90131
+   tl 504 1019.091
+   parent "{F1CC7B4D741028C3}Sounds/_SharedData/Configs/Amplitude/_SharedFolder/Amplitude_15-10.conf"
+  }
+ }
+ frequency {
+  FrequencyClass {
+   id 13333
+   name "Frequency 1"
+   tl 504 -512
+   enableDistanceAtt 1
+   filterStrength 2
+  }
+ }
+ playlist {
+  PlaylistClass {
+   id 29720
+   name "Playlist 1"
+   tl 81.499 1090.929
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 30724
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 3
+       links {
+        ConnectionClass connection {
+         id 69639
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 20484
+   name "M939_Door_Close"
+   tl 81.285 3
+   Volume -3
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{1167E794CB48DBC9}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Close_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{88795E0DD6AFEA59}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Close_2.wav"
+    }
+    AudioBankSampleClass "Sample(3)" {
+     Filename "{FF733685220D0529}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Close_3.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 21508
+   name "M939_Door_Open_End"
+   tl 81.285 -107
+   Volume -21
+   Selection Random
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{7567CD15BE48E84D}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Open_End_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{EC79748CA3AFD9DD}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Open_End_2.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 22532
+   name "M939_Door_Open_Start"
+   tl 81.285 -211
+   Volume -3
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{A4E9F6BCE816F3D8}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Open_Start_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{3DF74F25F5F1C248}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Open_Start_2.wav"
+    }
+    AudioBankSampleClass "Sample(3)" {
+     Filename "{4AFD27AD01532D38}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Open_Start_3.wav"
+    }
+    AudioBankSampleClass "Sample(4)" {
+     Filename "{4D3ADDFC67D597FB}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Open_Start_4.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 26628
+   name "M939_Door_Squeak"
+   tl 81.285 110
+   Volume -9
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{7181A573CC801B15}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Squeak_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{E89F1CEAD1672A85}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Squeak_2.wav"
+    }
+    AudioBankSampleClass "Sample(3)" {
+     Filename "{9F95746225C5C5F5}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_Door_Squeak_3.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 27652
+   name "Ural_IgnitionKeyOn"
+   tl 81.285 408.333
+   Volume -2
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{3432EE80889532C7}Sounds/Vehicles/Wheeled/Ural4320/Samples/Ural_IgnitionKeyOn_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{AD2C571995720357}Sounds/Vehicles/Wheeled/Ural4320/Samples/Ural_IgnitionKeyOn_2.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 28676
+   name "Ural_IgnitionKey_Off"
+   tl 81.285 517.333
+   Volume -9
+   Selection Random
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{CC69E1E4C6695697}Sounds/Vehicles/Wheeled/Ural4320/Samples/Ural_IgnitionKeyOff_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{5577587DDB8E6707}Sounds/Vehicles/Wheeled/Ural4320/Samples/Ural_IgnitionKeyOff_2.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 30724
+   name "M939_GearShift_A"
+   tl -151.5 1013.25
+   Volume -17
+   Selection Random
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{EFE51A70B46393FE}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_GearShift_A_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{76FBA3E9A984A26E}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_GearShift_A_2.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 31748
+   name "M939_GearShift_B"
+   tl -375.944 1105.583
+   Volume -16
+   Selection Random
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{E5404A3D02736079}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_GearShift_B_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{7C5EF3A41F9451E9}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_GearShift_B_2.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 39940
+   name "M939_LightsSwith_On"
+   tl 81.285 630.278
+   Volume -4
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{16407E9DF9214E75}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_LightsSwith_On.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 40964
+   name "M939_LightsSwith_Off"
+   tl 81.285 745.833
+   Volume -4
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{9EE6C7B9721E3BA8}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_LightsSwith_Off.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 47108
+   name "AirRelease"
+   tl 83.785 1921.98
+   Volume -24
+   "Fade out time" 0
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{80B8AF1E07365B69}Sounds/Vehicles/_SharedData/AirRelease/AirRelease_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{19A616871AD16AF9}Sounds/Vehicles/_SharedData/AirRelease/AirRelease_2.wav"
+    }
+    AudioBankSampleClass "Sample(3)" {
+     Filename "{6EAC7E0FEE738589}Sounds/Vehicles/_SharedData/AirRelease/AirRelease_3.wav"
+    }
+    AudioBankSampleClass "Sample(4)" {
+     Filename "{696B845E88F53F4A}Sounds/Vehicles/_SharedData/AirRelease/AirRelease_4.wav"
+    }
+    AudioBankSampleClass "Sample(5)" {
+     Filename "{1E61ECD67C57D03A}Sounds/Vehicles/_SharedData/AirRelease/AirRelease_5.wav"
+    }
+    AudioBankSampleClass "Sample(6)" {
+     Filename "{877F554F61B0E1AA}Sounds/Vehicles/_SharedData/AirRelease/AirRelease_6.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 54276
+   name "handbrake Off"
+   tl 86.285 2253.334
+   Volume -16
+   "Volume variance" 0.4
+   "Pitch variance" 0.7
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{B24E5F928E024F03}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_handbrakeOff_01.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{2B50E60B93E57E93}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_handbrakeOff_02.wav"
+    }
+    AudioBankSampleClass "Sample(3)" {
+     Filename "{5C5A8E83674791E3}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_handbrakeOff_03.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 55300
+   name "handbrake On"
+   tl 86.285 2138.011
+   Volume -15
+   "Volume variance" 0.4
+   "Pitch variance" 0.7
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{8CA0B6BE62D69FC8}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_handbrakeOn_01.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{15BE0F277F31AE58}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_handbrakeOn_02.wav"
+    }
+    AudioBankSampleClass "Sample(3)" {
+     Filename "{62B467AF8B934128}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_handbrakeOn_03.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 64516
+   name "IndicatorOn"
+   tl 87.257 2499.993
+   Volume -30
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{2449EAFF89261993}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_IndicatorOn_01.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{BD57536694C12803}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_IndicatorOn_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass "Sample(3)" {
+     Filename "{CA5D3BEE6063C773}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_IndicatorOn_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 68612
+   name "IndicatorOff"
+   tl 85.174 2686.985
+   Volume -30
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{F3F4C6CC3EF0B2AE}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_IndicatorOff_01.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{6AEA7F552317833E}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_IndicatorOff_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass "Sample(3)" {
+     Filename "{1DE017DDD7B56C4E}Sounds/Vehicles/Wheeled/M923A1/Samples/M923A1_IndicatorOff_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 70660
+   name "M939 GearShift Rattle"
+   tl -378.183 1225.445
+   iops {
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 72717
+         port 22
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 72717
+         port 20
+        }
+       }
+      }
+     }
+    }
+   }
+   Volume -16
+   "Fade in time" 150
+   "Enable offset port" 1
+   "Enable presilence port" 1
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{C2436C97FA74250C}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_GearShift_B_Rattle_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{5B5DD50EE793149C}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_GearShift_B_Rattle_2.wav"
+     Index 1
+    }
+    AudioBankSampleClass "Sample(3)" {
+     Filename "{2C57BD861331FBEC}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_GearShift_B_Rattle_3.wav"
+     Index 2
+    }
+    AudioBankSampleClass "Sample(4)" {
+     Filename "{2B9047D775B7412F}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_GearShift_B_Rattle_4.wav"
+     Index 3
+    }
+    AudioBankSampleClass "Sample(5)" {
+     Filename "{5C9A2F5F8115AE5F}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_GearShift_B_Rattle_5.wav"
+     Index 4
+    }
+    AudioBankSampleClass "Sample(6)" {
+     Filename "{C58496C69CF29FCF}Sounds/Vehicles/Wheeled/M923A1/Samples/M939_GearShift_B_Rattle_6.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 80900
+   name "Trunk Open"
+   tl 101.75 1432.583
+   Volume -11
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{27969FCB7C99D193}Sounds/Vehicles/Wheeled/Ural4320/Samples/Ural4320_Trunk_Open_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{BE882652617EE003}Sounds/Vehicles/Wheeled/Ural4320/Samples/Ural4320_Trunk_Open_2.wav"
+     Index 1
+    }
+   }
+  }
+  BankLocalClass {
+   id 83972
+   name "Trunk Close"
+   tl 102.583 1627.583
+   Volume -12
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{4FBC28A7CF0D09F3}Sounds/Vehicles/Wheeled/Ural4320/Samples/Ural4320_Trunk_Close_1.wav"
+    }
+    AudioBankSampleClass "Sample(2)" {
+     Filename "{D6A2913ED2EA3863}Sounds/Vehicles/Wheeled/Ural4320/Samples/Ural4320_Trunk_Close_2.wav"
+     Index 1
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass {
+   id 53276
+   name "Spatiality 52"
+   tl 504 -659.25
+   spatialFactor 1
+  }
+ }
+ auxOuts {
+  AuxOutClass {
+   id 73757
+   name "AuxOut 14"
+   tl 997.721 339.653
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 75789
+         port 5
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 75789
+         port 6
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 5
+       links {
+        ConnectionClass connection {
+         id 32777
+         port 5
+        }
+        ConnectionClass connection {
+         id 51209
+         port 5
+        }
+        ConnectionClass connection {
+         id 52233
+         port 5
+        }
+        ConnectionClass connection {
+         id 41993
+         port 5
+        }
+        ConnectionClass connection {
+         id 58377
+         port 5
+        }
+        ConnectionClass connection {
+         id 63497
+         port 5
+        }
+        ConnectionClass connection {
+         id 67593
+         port 5
+        }
+        ConnectionClass connection {
+         id 88073
+         port 5
+        }
+       }
+      }
+     }
+    }
+   }
+   OSPort 152583
+   DisableUpdating 1
+  }
+  AuxOutClass {
+   id 76829
+   name "AuxOut Reverb INT"
+   tl 997.721 -97.48
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 74765
+         port 5
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 74765
+         port 6
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 5
+       links {
+        ConnectionClass connection {
+         id 1033
+         port 5
+        }
+        ConnectionClass connection {
+         id 85001
+         port 5
+        }
+        ConnectionClass connection {
+         id 81929
+         port 5
+        }
+       }
+      }
+     }
+    }
+   }
+   OSPort 152583
+   DisableUpdating 1
+  }
+  AuxOutClass {
+   id 87069
+   name "AuxOut Reverb EXT"
+   tl 997.721 24.231
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 5
+       links {
+        ConnectionClass connection {
+         id 1033
+         port 5
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 74765
+         port 42
+        }
+       }
+      }
+     }
+    }
+   }
+   OSPort 197639
+   DisableUpdating 1
+  }
+ }
+ version 1
+ listenerWindowModel "{635E5DC476BD97EE}Assets/Vehicles/Wheeled/JLTV/JLTV_Base.xob"
+}

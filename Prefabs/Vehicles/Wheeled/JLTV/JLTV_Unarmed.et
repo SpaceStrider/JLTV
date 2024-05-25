@@ -1,0 +1,101 @@
+Vehicle : "{3A4CDF7428E32E7C}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   CompartmentSlots {
+    CargoCompartmentSlot Passenger_R01 : "{B62503A56507EFC7}Prefabs/Vehicles/Core/Configs/CargoCompartment_JLTV.conf" {
+     CompartmentAction SCR_GetInUserAction "{5C72BBFC0A0667AC}" {
+      ParentContextList {
+       "Door_R01"
+      }
+     }
+     GetOutAction SCR_GetOutAction "{5C72BBFC0A0667A8}" {
+      ParentContextList {
+       "GetOut_Door_R01"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{5C72BBFC0A0667A5}" {
+      ParentContextList {
+       "codriver_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5DE8A58B03B4E723}" {
+       ParentContextList {
+        "Door_R01" "codriver_idle"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "5C72BBFC0A066658" {
+      PivotID "codriver_idle"
+     }
+     DoorInfoList {
+      CompartmentDoorInfo "{5C72BBFC0A0667A1}" {
+       ContextName "Door_R01"
+       AnimDoorIndex 1
+       EntryPositionInfo PointInfo "{5C72BBFC0A0667A0}" {
+        PivotID "codriver_getIn"
+       }
+       ExitPositionInfo PointInfo "{5C72CA262412C38C}" {
+        PivotID "codriver_idle"
+       }
+      }
+     }
+     BaseCoverage 0
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#SPC_EditableEntity_JLTV_Unarmed_Name"
+    m_Image "{A4172B757597401F}UI/Textures/EditorPreviews/Vehicles/Wheeled/JLTV/JLTV_Unarmed.edds"
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 650
+     }
+     SCR_EntityBudgetValue "{60F65AB2BBAD3815}" {
+      m_BudgetType RANK_CORPORAL
+      m_Value 2
+     }
+    }
+    m_aOccupantFillCompartmentTypes {
+     2
+    }
+    m_aPassengerEntityBudgetCost {
+     SCR_EntityBudgetValue "{5C889141EBC3FA67}" {
+      m_BudgetType AI
+      m_Value 3
+     }
+    }
+   }
+  }
+  VehicleWheeledSimulation_SA "{731B26FCA2F19855}" {
+   Simulation Wheeled "{4D8B26DEA5F25978}" {
+    Differentials {
+     Differential Diff_C {
+     }
+    }
+    Axles {
+     Axle "{4D8B26DF957A8E1C}" {
+      Suspension Suspension "{4D8B26DFF8859A7B}" {
+      }
+     }
+     Axle "{4D8B26DF8CF2F3D8}" {
+      Suspension Suspension "{4D8B26DF2B10AE05}" : "{DF8F6B19AE171872}Prefabs/Vehicles/Wheeled/JLTV/Configs/JLTV_Suspension.conf" {
+       MaxSteeringAngle 0
+      }
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   SlotMappers {
+    CompartmentToSlotMapping Roof {
+     Compartments {
+      "PilotCompartment" "Passenger_L02" "Passenger_R02" "Passenger_R01"
+     }
+    }
+   }
+  }
+ }
+}

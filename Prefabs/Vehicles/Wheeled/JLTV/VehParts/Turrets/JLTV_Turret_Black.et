@@ -1,0 +1,26 @@
+GameEntity : "{A97857BDDA2E1607}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Turret.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{5C888AC041E34271}" {
+     SourceMaterial "M230_LF"
+     AssignedMaterial "{40B7EA05569B9FDC}Assets/Vehicles/Wheeled/JLTV/data/M230_LF_Black.emat"
+    }
+    MaterialAssignClass "{5C888AC041E343AD}" {
+     SourceMaterial "Main_Body"
+     AssignedMaterial "{F434820F3B2BEDEE}Assets/Vehicles/Wheeled/JLTV/data/Main_Body_Black.emat"
+    }
+   }
+  }
+  UniversalInventoryStorageComponent "{5C7A7A05B22196B0}" {
+   Attributes SCR_ItemAttributeCollection "{5C7A7A05B22196B1}" {
+    CustomAttributes {
+     PreviewRenderAttributes "{5C7A7A05B22196CF}" {
+      PreviewPrefab "{1891D4F4DDB374BA}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Turret_Black.et"
+     }
+    }
+   }
+  }
+ }
+}

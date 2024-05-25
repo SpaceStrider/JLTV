@@ -1,0 +1,207 @@
+ProcAnimProjectClass {
+ signals {
+  SignalClass {
+   id 1028
+   name "TurretBaseRotation"
+   tl -1076.75 526
+   res "{57CA64C987A197DB}Prefabs/Vehicles/Wheeled/M998/ProcAnims/TurretBaseRotation.siga"
+   inputsport {
+    2
+   }
+   outputsport {
+    1 7
+   }
+   inputvalues {
+    0
+   }
+   inputvaluesmin {
+    -720
+   }
+   inputvaluesmax {
+    720
+   }
+  }
+ }
+ funcs {
+  BoneClass {
+   id 2054
+   name "TurretBase"
+   version 0
+   tl -718 307
+   outs {
+    7174
+   }
+   bone "v_turret_01"
+  }
+  BoneClass {
+   id 3078
+   name "Gunner"
+   version 0
+   tl -709 848
+   outs {
+    6150
+   }
+   bone "gunner_idle"
+  }
+  RotationMakeClass {
+   id 4102
+   name "RotationMake 4102"
+   tl -705 630
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 1028
+         port 1
+        }
+       }
+      }
+     }
+    }
+   }
+   outs {
+    6150
+   }
+  }
+  RotationMakeClass {
+   id 5126
+   name "RotationMake 5126"
+   tl -710 429
+   iops {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 0
+       links {
+        ConnectionClass connection {
+         id 1028
+         port 1
+        }
+       }
+      }
+     }
+    }
+   }
+   outs {
+    7174
+   }
+  }
+  RotationSetClass {
+   id 6150
+   name "RotationSet 6150"
+   tl -398 743
+   funcs {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 2
+       links {
+        ConnectionClass connection {
+         id 4102
+         port 0
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 2
+       links {
+        ConnectionClass connection {
+         id 3078
+         port 0
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  RotationSetClass {
+   id 7174
+   name "RotationSet 7174"
+   tl -406 377
+   funcs {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 2
+       links {
+        ConnectionClass connection {
+         id 5126
+         port 0
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 2
+       links {
+        ConnectionClass connection {
+         id 2054
+         port 0
+        }
+       }
+      }
+     }
+    }
+   }
+   UpdateCollider 1
+  }
+ }
+ model "{F06D0F1CBEAC4325}Assets/Vehicles/Wheeled/M998/M1025_Turret.xob"
+ version 1
+ compiled ProcAnimCompiledClass {
+  visited {
+   385 257 129 513 1 641
+  }
+  ops {
+   ProcAnimCompiledOp {
+    data {
+     1 327680 0
+    }
+   }
+   ProcAnimCompiledOp {
+    data {
+     1 262144 0
+    }
+   }
+   ProcAnimCompiledOp {
+    data {
+     1 262144 0
+    }
+   }
+   ProcAnimCompiledOp {
+    data {
+     1 327680 0
+    }
+   }
+   ProcAnimCompiledOp {
+    data {
+     0 4 131072 0 65536 0
+    }
+   }
+   ProcAnimCompiledOp {
+    data {
+     0 4 196608 0 0 0
+    }
+   }
+  }
+  version 2
+  argsize 10
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{5BE229DE652ECA13}Sounds/Vehicles/Wheeled/BTR70/Vehicles_JLTV_Rain.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{CEEB9426D17BBDC3}Sounds/Vehicles/Wheeled/JLTV/Vehicles_JLTV_Animations.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

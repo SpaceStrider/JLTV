@@ -1,0 +1,166 @@
+GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponSoundComponent "{5A8685198A9AEEDD}" {
+   Filenames {
+    "{EE8892C4180091FD}Sounds/Weapons/HeavyWeapons/M2/Weapons_HeavyWeapons_M2_Shot.acp" "{6616B1A0537FC180}Sounds/Vehicles/Wheeled/M151A2/Vehicles_M151A2_Turret.acp" "{EC7E8631CBC17F15}Sounds/Weapons/HeavyWeapons/M2/Weapons_HeavyWeapons_M2_Handling.acp"
+   }
+   IncludeInactive 1
+  }
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{359E54982B8D5CFC}Assets/Weapons/HeavyWeapons/M230LF/M230LF.xob"
+  }
+  RigidBody "{5C7CAB18F2F40FE8}" {
+   Enabled 0
+   Mass 58
+   ModelGeometry 1
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07E1D123E9}" {
+     Name "#AR-Weapon_M2HB_Name"
+     Description "#AR-Weapon_M2HB_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5C7CAB18F2F40FE1}" {
+     Weight 38.1
+     SizeSetupStrategy Volume
+     ItemVolume 12000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5534BB9B9A3E369E}" {
+      CameraPreset Right
+      CameraDistanceToItem 1.7
+     }
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5C7CAB18F2F40FFA}" {
+     AttachmentSlot InventoryStorageSlot optics {
+      PivotID "slot_optics"
+      ChildPivotID "snap_weapon"
+      Enabled 0
+     }
+    }
+    SightsComponent "{BB23A637957CFFF8}" {
+     SightsPosition PointInfo "{BB23A63796688E69}" {
+      PivotID "eye"
+     }
+    }
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     components {
+      CaseEjectingEffectComponent "{5122AAD190FCA21D}" {
+       EffectPosition EntitySlotInfo "{513A938439231378}" {
+        PivotID "barrel_chamber"
+        Angles -90 90 0
+       }
+      }
+      CaseEjectingEffectComponent "{5C7CAB18F2F40FF3}" {
+       ParticleEffect "{E7ACDE0ACCBCB07A}Particles/Weapon/Casing_Holder.ptc"
+       EffectPosition EntitySlotInfo casing_holder {
+        PivotID "barrel_chamber"
+        Angles 0 90 0
+       }
+      }
+      CaseEjectingEffectComponent "{5C7CAB18F2F40FF4}" {
+       ParticleEffect "{45D764EF557E02B4}Particles/Weapon/Smoke_M2.ptc"
+       EffectPosition EntitySlotInfo "{52D4A6D19A301391}" {
+        PivotID "barrel_muzzle"
+       }
+       HasSound 0
+      }
+     }
+     FireModes {
+      BaseFireMode "{B80A64F4A8EF8333}" {
+       MaxBurst -1
+       RoundsPerMinute 200
+      }
+     }
+     MagazineWell MagazineWellChain30 "{5C7CAB18F2F40FCD}" {
+     }
+     BulletInitSpeedCoef 1.125
+     DispersionDiameter 0.4
+     DispersionRange 400
+     WeaponAimModifiers {
+      RecoilWeaponAimModifier "{5C7CAB18F2F40FCB}" {
+       LinearData RecoilData "{5C7CAB18F2F40FC9}" {
+        "Curve X" {
+         0 0.5 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.032 0.55 0.045 0.75 0.065 0.7 0.071 0.65 0.095 0.5 0.25 0.45 0.45 0.52 0.7 0.495 1 0.5
+        }
+        "Curve Z" {
+         0 0.5 0.032 0.65 0.045 0.95 0.065 0.95 0.071 0.85 0.095 0.7 0.25 0.35 0.45 0.55 0.7 0.485 1 0.5
+        }
+        "Curve Magnitudes" 1 1 1
+        "Curve Mins" -0.001 -0.006 -0.022
+        "Curve Maxs" 0 -0.005 -0.018
+       }
+       AngularData RecoilData "{5C7CAB18F2F40FC8}" {
+        "Curve X" {
+         0 0.5 0.019 0.411 0.055 0.539 0.11 0.474 0.216 0.497 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.032 0.55 0.045 0.8 0.065 0.95 0.071 0.9 0.095 0.75 0.25 0.45 0.45 0.52 0.7 0.49 1 0.5
+        }
+        "Curve Z" {
+         0 0.5 0.034 0.431 0.045 0.85 0.095 0.7 0.238 0.487 0.443 0.5 0.7 0.5 1 0.5
+        }
+        "Curve Magnitudes" 2 2 1
+        "Curve Mins" -0.001 0.3 -4
+        "Curve Maxs" 0.001 0.6 4
+       }
+       TurnOffsetData RecoilData "{5C7CAB18F2F40FC7}" {
+        "Curve X" {
+         0 0.5 0.019 0.411 0.055 0.539 0.11 0.474 0.216 0.497 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.014 0.578 0.035 0.937 0.042 0.998 0.123 0.441 0.236 0.5 1 0.5
+        }
+        "Curve Magnitudes" 0.65 5 0
+        "Curve Mins" -0.5 0.3 0
+        "Base Recoil Scale" 1
+       }
+      }
+     }
+     UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
+      m_bShowCaliber 1
+      m_sCaliber "30x113mm"
+     }
+     ReloadDuration 11
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      PivotID "w_root"
+      Offset 0.1077 -0.0257 0.2074
+     }
+     MagazineTemplate "{9B8CDC3CD2E535D2}Prefabs/Weapons/Magazines/Box_30x113_M230LF_160rnd_HEDP.et"
+    }
+    WeaponAnimationComponent "{60563A8AD67027DE}" {
+     AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
+     AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
+     AlwaysActive 1
+     AnimInjection AnimationAttachmentInfo "{60563A8ADF1D2E2E}" {
+      AnimGraph "{6791BE2144ADC6A3}Assets/Weapons/HeavyWeapons/workspaces/M2HB_m998.agr"
+      AnimInstance "{90F5E30119FE8312}Assets/Weapons/HeavyWeapons/workspaces/M2HB_Player_tripod.asi"
+      BindingName "Weapon"
+     }
+     BindWithInjection 1
+     AnimCommandsToBind {
+      "" ""
+     }
+     AnimVariablesToBind {
+      ""
+     }
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "M230LF"
+    Description ""
+    m_bShowWeaponName 1
+   }
+   WeaponSlotType "hmg"
+  }
+ }
+ coords 2257.5 51.2 2160
+}

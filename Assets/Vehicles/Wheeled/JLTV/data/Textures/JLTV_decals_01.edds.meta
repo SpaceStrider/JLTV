@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{C901FF9B20FC7173}Assets/Vehicles/Wheeled/JLTV/data/Textures/JLTV_decals_01.edds"
+ Configurations {
+  TIFFResourceClass PC {
+   MaxSize "512"
+  }
+  TIFFResourceClass XBOX_ONE : PC {
+   MaxSize "512"
+  }
+  TIFFResourceClass XBOX_SERIES : PC {
+   MaxSize "512"
+  }
+  TIFFResourceClass PS4 : PC {
+   MaxSize "512"
+  }
+  TIFFResourceClass HEADLESS : PC {
+   MaxSize "512"
+  }
+ }
+}

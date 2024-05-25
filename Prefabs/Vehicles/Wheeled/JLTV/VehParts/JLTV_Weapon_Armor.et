@@ -1,0 +1,16 @@
+GenericEntity {
+ ID "5C8881729E7FAF5A"
+ components {
+  MeshObject "{5C8881729E7FAF54}" {
+   Object "{0C10E9D82D3B9089}Assets/Vehicles/Wheeled/JLTV/JLTV_WeaponShield.xob"
+  }
+  Hierarchy "{5C8881729E7FA8AE}" {
+  }
+  RigidBody "{5C8881729E7FA8AC}" {
+   Mass 100
+   ModelGeometry 1
+  }
+  RplComponent "{5C8881729E7FA8A9}" {
+  }
+ }
+}

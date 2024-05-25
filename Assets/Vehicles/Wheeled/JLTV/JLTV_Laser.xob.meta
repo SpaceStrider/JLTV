@@ -1,0 +1,26 @@
+MetaFileClass {
+ Name "{9D3AD4286C213A72}Assets/Vehicles/Wheeled/JLTV/JLTV_Laser.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{5C72753AAC0450F4}" {
+     SourceMaterial "Laser"
+     AssignedMaterial "{F5A2989F3EA22777}Assets/Vehicles/Wheeled/JLTV/data/Laser.emat"
+    }
+   }
+   MeshParams {
+    MeshParam Laser {
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

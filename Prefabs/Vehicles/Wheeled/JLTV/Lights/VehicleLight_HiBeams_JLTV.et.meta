@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{47AF1373842EC90E}Prefabs/Vehicles/Wheeled/JLTV/Lights/VehicleLight_HiBeams_JLTV.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

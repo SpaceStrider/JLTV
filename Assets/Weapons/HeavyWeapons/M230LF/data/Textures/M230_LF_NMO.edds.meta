@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{8D9CE01CDAD4CD42}Assets/Weapons/HeavyWeapons/M230LF/data/Textures/M230_LF_NMO.edds"
+ Configurations {
+  TIFFResourceClass PC {
+  }
+  TIFFResourceClass XBOX_ONE : PC {
+  }
+  TIFFResourceClass XBOX_SERIES : PC {
+  }
+  TIFFResourceClass PS4 : PC {
+  }
+  TIFFResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,9 @@
+MatPBRBasic {
+ Emissive 0.114 0.114 0.114 0
+ EmissiveLV 4
+ ApplyAlbedoToEmissive 1
+ RoughnessScale 1.5
+ EmissiveMap "{33F1E25AFDBE5163}Assets/Vehicles/Wheeled/JLTV/data/Textures/Interrior_Emissive.edds"
+ BCRMap "{18BB8CCB2E4F9191}Assets/Vehicles/Wheeled/JLTV/data/Textures/Interrior_BCR.edds"
+ NMOMap "{20633759F738C30F}Assets/Vehicles/Wheeled/JLTV/data/Textures/Interrior_NMO.edds"
+}
