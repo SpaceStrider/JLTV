@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{B1C534864D4A8ED4}Prefabs/Vehicles/Wheeled/M998/JLTV_gun_mount.et"
+ Name "{B1C534864D4A8ED4}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_gun_mount.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
@@ -10,6 +10,8 @@ MetaFileClass {
   EntityTemplateResourceClass PS4 : PC {
   }
   EntityTemplateResourceClass HEADLESS : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
   }
  }
 }

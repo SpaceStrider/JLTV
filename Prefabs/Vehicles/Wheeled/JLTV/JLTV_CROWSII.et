@@ -9,23 +9,6 @@ Vehicle : "{3A4CDF7428E32E7C}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Base.et" {
     }
    }
   }
-  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
-   CompartmentSlots {
-    CargoCompartmentSlot Passenger_L02 {
-     DoorInfoList {
-      CompartmentDoorInfo "{5C72BBFC0A0667A1}" {
-      }
-     }
-    }
-    CargoCompartmentSlot Passenger_R02 {
-     DoorInfoList {
-      CompartmentDoorInfo "{5C72BBFC0A0667A1}" {
-       SeatPositionAligning 1
-      }
-     }
-    }
-   }
-  }
   SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
    m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
     Name "#SPC_EditableEntity_JLTV_CROWSII_Name"
