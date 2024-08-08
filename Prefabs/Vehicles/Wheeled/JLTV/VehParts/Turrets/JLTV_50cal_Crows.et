@@ -1,0 +1,35 @@
+Turret : "{A97857BDDA2E1607}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_Turret.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Object "{620EF62AFCD35E40}Assets/Vehicles/Wheeled/SPC_Stryker/STRYKER_Turret.xob"
+  }
+  SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   CompartmentSlots {
+    TurretCompartmentSlot TurretCompartment {
+     PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
+      Offset 1.2088 1.3421 0.0505
+     }
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   Enabled 1
+   AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
+    Offset -0.1401 -0.244 0.2556
+   }
+   WeaponTemplate "{620EF62AED2BF8DB}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_CROWS.et"
+  }
+  WeaponSlotComponent "{620EF3ADCBA19320}" {
+   WeaponType MachineGun
+   AttachType InventoryStorageSlot "{620EF3ADE78BFF61}" {
+    PivotID "v_turret_01"
+    Offset 0 0.0027 0.0134
+    Angles 11.2542 0 0
+   }
+   WeaponTemplate "{620EF62A8BE50B04}Prefabs/Weapons/HeavyWeapons/Smoke_CROWS.et"
+   WeaponSlotIndex 1
+  }
+ }
+ coords 99.802 -0.037 1255.03
+}

@@ -1,0 +1,43 @@
+MatPBRMulti {
+ GlobalMCRMap "{A4E06136EA2DA28C}Assets/Vehicles/Wheeled/SPC_Stryker/data/Textures/DefaultMaterial_BCR.edds"
+ GlobalMapsUVTransform MatUVTransform "{5B261C7B6DDE2C21}" {
+ }
+ MaskMap "{65568EEAD9AA4E6D}Assets/Vehicles/Wheeled/SPC_Stryker/data/Textures/DefaultMaterial_GLOBAL_MASK.edds"
+ GlobalNMOMap "{9C38DAA4335AF012}Assets/Vehicles/Wheeled/SPC_Stryker/data/Textures/DefaultMaterial_NMO.edds"
+ GlobalNMOUVTransform MatUVTransform "{5B261C7B7277B3AD}" {
+ }
+ Enabled_3 1
+ Color_3 0.004 0.004 0.003 1
+ BCR_3 "{8EADB31D864DD0FC}Assets/_SharedData/Metal/ST_MetalBare_01_BCR.edds"
+ NMO_3 "{0470164F98BC8DD2}Assets/_SharedData/Metal/ST_MetalBare_01_NMO.edds"
+ MaskSharpness_3 1.615
+ Mask_3 "{A3B4218CCE57A275}Assets/_SharedData/DetailMask/ST_Paint_peeling_03_Mask1.edds"
+ MaskUVScale_3 0.86
+ UVTransform_3 MatUVTransform "{5B261C7AF26CD863}" {
+  TilingU 5
+  TilingV 5
+ }
+ DetNormal_3 0.5
+ Roughness_3 3.061
+ Metalness_3 0
+ Enabled_2 1
+ Color_2 0.107 0.112 0.073 1
+ BCR_2 "{8EADB31D864DD0FC}Assets/_SharedData/Metal/ST_MetalBare_01_BCR.edds"
+ NMO_2 "{0470164F98BC8DD2}Assets/_SharedData/Metal/ST_MetalBare_01_NMO.edds"
+ MaskSharpness_2 1.615
+ Mask_2 "{A3B4218CCE57A275}Assets/_SharedData/DetailMask/ST_Paint_peeling_03_Mask1.edds"
+ MaskUVScale_2 0.86
+ UVTransform_2 MatUVTransform "{5B261C7BD60CEA76}" {
+  TilingU 5
+  TilingV 5
+ }
+ DetNormal_2 0.5
+ Roughness_2 3.061
+ Metalness_2 0
+ BCR_1 "{8EADB31D864DD0FC}Assets/_SharedData/Metal/ST_MetalBare_01_BCR.edds"
+ NMO_1 "{0470164F98BC8DD2}Assets/_SharedData/Metal/ST_MetalBare_01_NMO.edds"
+ UVTransform_1 MatUVTransform "{5B261C7BECFFE670}" {
+  TilingU 5
+  TilingV 5
+ }
+}

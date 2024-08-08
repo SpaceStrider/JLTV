@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{620EF62ACC3D8AB4}Assets/Vehicles/Wheeled/SPC_Stryker/data/STRYKER_Turret_Glass.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+ }
+}

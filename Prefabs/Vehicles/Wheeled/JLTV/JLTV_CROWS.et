@@ -1,0 +1,29 @@
+Vehicle : "{49B5C8D1F28E7B7F}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{5C72CA225F7A3B65}" {
+     SourceMaterial "Mirror_Generic"
+     AssignedMaterial "{A47C5D03ADB1464D}Assets/Vehicles/Wheeled/JLTV/data/Mirror_generic.emat"
+    }
+    MaterialAssignClass "{620EF3ACBC589060}" {
+     SourceMaterial "Main_Body"
+     AssignedMaterial "{545C8860A582F3EF}Assets/Vehicles/Wheeled/JLTV/data/Main_Body_Green.emat"
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo Roof {
+     Prefab "{B901C89C8799C152}Prefabs/Vehicles/Wheeled/JLTV/VehParts/JLTV_Roof_Olive.et"
+    }
+    RegisteringComponentSlotInfo CROWS {
+     Offset -0.7178 -0.0555 0.0656
+     Prefab "{756113661CAA5340}Prefabs/Vehicles/Wheeled/Stryker/VehParts/STRYKER_CROWS_Turret.et"
+    }
+   }
+  }
+ }
+ coords 100.486 0 1255.013
+}
