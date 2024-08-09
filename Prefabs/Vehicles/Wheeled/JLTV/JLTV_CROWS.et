@@ -13,6 +13,22 @@ Vehicle : "{49B5C8D1F28E7B7F}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII.et" {
     }
    }
   }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#SPC_EditableEntity_JLTV_CROWS_Olive_Name"
+    m_Image "{39E3C05055008B5E}UI/Textures/EditorPreviews/Vehicles/Wheeled/JLTV/NVIDIA_Share_9Rhx12SU1G.edds"
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5C946CE5223089AE}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5DE8B00C63335F32}" {
+     SlotTemplate InventoryStorageSlot Turret {
+      Prefab "{4EC57F7A71F869BF}Prefabs/Weapons/Magazines/Box_127x99_CROWS_M2_200rnd_4AP_1APIT.et"
+     }
+     NumSlots 3
+    }
+   }
+  }
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
     EntitySlotInfo Roof {
@@ -20,10 +36,10 @@ Vehicle : "{49B5C8D1F28E7B7F}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII.et" {
     }
     RegisteringComponentSlotInfo CROWS {
      Offset -0.7178 -0.0555 0.0656
-     Prefab "{756113661CAA5340}Prefabs/Vehicles/Wheeled/Stryker/VehParts/STRYKER_CROWS_Turret.et"
+     Prefab "{8BA8628C499447B4}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_50cal_Crows.et"
     }
    }
   }
  }
- coords 100.486 0 1255.013
+ coords 58.001 0 1243.637
 }

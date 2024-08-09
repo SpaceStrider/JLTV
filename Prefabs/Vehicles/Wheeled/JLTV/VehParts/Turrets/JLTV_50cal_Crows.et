@@ -21,6 +21,7 @@ Turret : "{A97857BDDA2E1607}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_
    WeaponTemplate "{620EF62AED2BF8DB}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_CROWS.et"
   }
   WeaponSlotComponent "{620EF3ADCBA19320}" {
+   Enabled 0
    WeaponType MachineGun
    AttachType InventoryStorageSlot "{620EF3ADE78BFF61}" {
     PivotID "v_turret_01"
@@ -31,5 +32,5 @@ Turret : "{A97857BDDA2E1607}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_
    WeaponSlotIndex 1
   }
  }
- coords 99.802 -0.037 1255.03
+ coords 50.072 0 1256.2
 }
