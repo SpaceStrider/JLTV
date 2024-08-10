@@ -40,6 +40,16 @@ Vehicle : "{49B5C8D1F28E7B7F}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII.et" {
     }
    }
   }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{621328D96D3AFF11}" {
+     ContextName "gunner"
+     Position PointInfo "{621328D91D588696}" {
+      PivotID "codriver_idle"
+     }
+    }
+   }
+  }
  }
- coords 58.001 0 1243.637
+ coords 1301.788 37.75 2854.084
 }

@@ -7,6 +7,11 @@ Turret : "{A97857BDDA2E1607}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_
   SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
    CompartmentSlots {
     TurretCompartmentSlot TurretCompartment {
+     CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
+      ParentContextList {
+       "door_r01"
+      }
+     }
      PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
       Offset 1.2088 1.3421 0.0505
      }
@@ -31,6 +36,15 @@ Turret : "{A97857BDDA2E1607}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_
    WeaponTemplate "{620EF62A8BE50B04}Prefabs/Weapons/HeavyWeapons/Smoke_CROWS.et"
    WeaponSlotIndex 1
   }
+  ActionsManagerComponent "{51ACD09C7181BA0B}" {
+   ActionContexts {
+    UserActionContext "{51ACFBB064390C6E}" {
+     ContextName "unused"
+     Position PointInfo "{51ACFBB061993925}" {
+     }
+    }
+   }
+  }
  }
- coords 50.072 0 1256.2
+ coords 1302.296 38.985 2854.195
 }
