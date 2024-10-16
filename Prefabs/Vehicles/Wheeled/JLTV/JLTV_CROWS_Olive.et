@@ -1,0 +1,27 @@
+Vehicle : "{A19889DD96914B75}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWS.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{62A0219A610809ED}" {
+     SourceMaterial "Main_Body"
+     AssignedMaterial "{545C8860A582F3EF}Assets/Vehicles/Wheeled/JLTV/data/Main_Body_Green.emat"
+    }
+    MaterialAssignClass "{5C72CA225F7A3B65}" {
+     SourceMaterial "Mirror_Generic"
+     AssignedMaterial "{A47C5D03ADB1464D}Assets/Vehicles/Wheeled/JLTV/data/Mirror_generic.emat"
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo Roof {
+     Prefab "{B901C89C8799C152}Prefabs/Vehicles/Wheeled/JLTV/VehParts/JLTV_Roof_Olive.et"
+    }
+    RegisteringComponentSlotInfo CROWS {
+     Prefab "{8BA8628C499447B4}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_50cal_Crows.et"
+    }
+   }
+  }
+ }
+}

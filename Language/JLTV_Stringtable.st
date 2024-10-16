@@ -1,6 +1,20 @@
 StringTable {
  ItemClassName "CustomStringTableItem"
  Items {
+  CustomStringTableItem "{62A0219BF1BAB878}" {
+   Id "SPC_EditableEntity_JLTV_CROWS_Black_Name"
+   Target_en_us "JLTV CROWS Black"
+   Modified 1654663156
+   Author "Ethan Benzel"
+   LastChanged "Ethan Benzel"
+  }
+  CustomStringTableItem "{62A0219BFEEE91F1}" {
+   Id "SPC_EditableEntity_JLTV_CROWS_Name"
+   Target_en_us "JLTV CROWS"
+   Modified 1654663162
+   Author "Ethan Benzel"
+   LastChanged "Ethan Benzel"
+  }
   CustomStringTableItem "{6212E2E5D773AFB4}" {
    Id "SPC_EditableEntity_JLTV_CROWS_Olive_Name"
    Target_en_us "JLTV CROWS Olive"

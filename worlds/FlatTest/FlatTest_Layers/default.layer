@@ -1,26 +1,5 @@
-$grp Turret {
- {
-  coords 114.625 1 170.436
- }
- {
-  components {
-   TurretComponent "{5D5E52D90605D734}" {
-    CameraAdsAttachment PointInfo "{60FCA8218CFFDAD3}" {
-     PivotID "v_gun_02"
-     Offset 0 0 0.2
-    }
-   }
-  }
-  coords 109.273 1 164.599
- }
-}
-$grp Vehicle {
- Cougar6x6_Base1 {
-  coords 115.425 1 177.843
- }
- Cougar4x4_Base1 {
-  coords 120.181 1 174.324
- }
+Turret : "{0466957A2F7C2E9A}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_50cal_Crows_Tan.et" {
+ coords 124.997 1 167.354
 }
 Projectile : "{1663496AE5B9F10B}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433.et" {
  coords 78.203 1 157
@@ -28,262 +7,270 @@ Projectile : "{1663496AE5B9F10B}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433.et" 
 Turret : "{18343824C9D533CA}Prefabs/Vehicles/Wheeled/M998/VehParts/M1025_gun_mount_M2HB.et" {
  coords 95.16 1 178.002
 }
-Vehicle JLTV_CROWSII_Olive1 : "{225A9305129485F1}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII_Olive.et" {
- components {
-  SCR_VehicleSoundComponent "{55C2E66AD4EF2CA6}" {
-   Filenames {
-   }
-   SoundPoints {
-    SoundPointInfo Rain_Window_Front {
-     Offset -0.0001 2.0005 0.9586
+Vehicle JLTV_CROWS_Black1 : "{21908B379B8DDE0B}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWS_Black.et" {
+ coords 134.519 1 156.427
+}
+$grp Vehicle : "{225A9305129485F1}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII_Olive.et" {
+ JLTV_CROWSII_Olive1 {
+  components {
+   SCR_VehicleSoundComponent "{55C2E66AD4EF2CA6}" {
+    Filenames {
     }
-    SoundPointInfo Engine {
-     Offset 0 1.2331 1.8964
-    }
-    SoundPointInfo Supplies {
-     Offset 0 1.8299 -1.9993
-    }
-   }
-   Wheels {
-    VehicleWheelSound L01 {
-     Filename "{58B4EAD8230C865B}Sounds/Vehicles/Wheeled/Ural4320/Vehicles_Ural4320_Wheel_l_1.acp"
-     SoundPoint PointInfo "{5C72B342006BC67C}" {
-      PivotID "v_wheel_L01"
+    SoundPoints {
+     SoundPointInfo Rain_Window_Front {
+      Offset -0.0001 2.0005 0.9586
+     }
+     SoundPointInfo Engine {
+      Offset 0 1.2331 1.8964
+     }
+     SoundPointInfo Supplies {
+      Offset 0 1.8299 -1.9993
      }
     }
-    VehicleWheelSound R01 {
-     Filename "{18D4C82EFFAAFD6D}Sounds/Vehicles/Wheeled/Ural4320/Vehicles_Ural4320_Wheel_r_1.acp"
-     SoundPoint PointInfo "{5C72B34206C6BAF3}" {
-      PivotID "v_wheel_R01"
-     }
-    }
-    VehicleWheelSound L02 {
-     Filename "{C1AA53413EEBB7CB}Sounds/Vehicles/Wheeled/Ural4320/Vehicles_Ural4320_Wheel_l_2.acp"
-     SoundPoint PointInfo "{5C72B34205A411B2}" {
-      PivotID "v_wheel_L02"
-     }
-    }
-    VehicleWheelSound R02 {
-     Filename "{81CA71B7E24DCCFD}Sounds/Vehicles/Wheeled/Ural4320/Vehicles_Ural4320_Wheel_r_2.acp"
-     SoundPoint PointInfo "{5C72B34204942FE9}" {
-      PivotID "v_wheel_R02"
-     }
-    }
-   }
-  }
-  AICarMovementComponent "{5A3EFB66475D9F87}" {
-   Enabled 1
-  }
-  BaseLightManagerComponent "{51E210F17D2534F7}" {
-   LightSlots {
-    SCR_LightSlot "{5C7478FE13B7051F}" : "{3F796555FD10152A}Prefabs/Vehicles/Core/Lights/Light_Brake.conf" {
-     LightPositionInfo EntitySlotInfo "{51E177468DA2D7F8}" {
-      Offset -1.0109 1.0371 -2.6958
-     }
-     ParentSurface "0"
-    }
-    SCR_LightSlot "{5C7478FE1CC07682}" : "{3F796555FD10152A}Prefabs/Vehicles/Core/Lights/Light_Brake.conf" {
-     LightPositionInfo EntitySlotInfo "{51E177468DA2D7F8}" {
-      Offset 1.0109 1.0371 -2.6958
-     }
-     ParentSurface "1"
-    }
-    SCR_LightSlot "{5C7478F98A541B02}" : "{89853FD0B72E39A1}Prefabs/Vehicles/Core/Lights/Light_Head.conf" {
-     LightPositionInfo EntitySlotInfo "{51DAAC8FC2824EEC}" {
-      Offset -0.7004 1.3705 2.5664
-      Angles -30.0624 -5 8.4821
-     }
-     LightPrefab "{00EF649B4A1C872B}Prefabs/Vehicles/Wheeled/JLTV/Lights/VehicleLight_Head_JLTV.et"
-     ParentSurface "3"
-    }
-    SCR_LightSlot "{5C7478F98BAA414A}" : "{89853FD0B72E39A1}Prefabs/Vehicles/Core/Lights/Light_Head.conf" {
-     LightPositionInfo EntitySlotInfo "{51DAAC8FC2824EEC}" {
-      Offset 0.7004 1.3705 2.5664
-      Angles -31.1279 5 0
-     }
-     LightPrefab "{00EF649B4A1C872B}Prefabs/Vehicles/Wheeled/JLTV/Lights/VehicleLight_Head_JLTV.et"
-    }
-    SCR_LightSlot "{5C7478FBC673F443}" : "{FCCBB28A48232EE4}Prefabs/Vehicles/Core/Lights/Light_HiBeam.conf" {
-     LightPositionInfo EntitySlotInfo "{51E17746999D1D6E}" {
-      Offset -0.7004 1.3705 2.5664
-     }
-     LightPrefab "{47AF1373842EC90E}Prefabs/Vehicles/Wheeled/JLTV/Lights/VehicleLight_HiBeams_JLTV.et"
-    }
-    SCR_LightSlot "{5C7478FBC76E8CAD}" : "{FCCBB28A48232EE4}Prefabs/Vehicles/Core/Lights/Light_HiBeam.conf" {
-     LightPositionInfo EntitySlotInfo "{51E17746999D1D6E}" {
-      Offset 0.7004 1.3705 2.5664
-     }
-     LightPrefab "{47AF1373842EC90E}Prefabs/Vehicles/Wheeled/JLTV/Lights/VehicleLight_HiBeams_JLTV.et"
-    }
-    SCR_LightSlot "{5C94787D9754221C}" : "{50D459CD2CEC9DAD}Prefabs/Vehicles/Core/Lights/Light_Dashboard.conf" {
-     LightPositionInfo EntitySlotInfo "{51E2210D04212E5A}" {
-      Offset 0 2.2111 0
-     }
-     LightPrefab "{420BD0104ACAFDD9}Prefabs/Vehicles/Core/Lights/JLTV_Dashboard.et"
-    }
-   }
-   EmissiveSurfaceSlots {
-    EmissiveLightSurfaceSlot Brake_RL {
-     Prefab "{B0CF0351AAB5631C}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Brake_RL.et"
-     LightType 64
-     ConfigurationsOverride {
-      SurfaceLightConfigItem "{5C7478F2B6346F70}" : "{59F3FC900B204F60}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Brake.conf" {
+    Wheels {
+     VehicleWheelSound L01 {
+      Filename "{58B4EAD8230C865B}Sounds/Vehicles/Wheeled/Ural4320/Vehicles_Ural4320_Wheel_l_1.acp"
+      SoundPoint PointInfo "{5C72B342006BC67C}" {
+       PivotID "v_wheel_L01"
       }
      }
-    }
-    EmissiveLightSurfaceSlot Brake_RR {
-     Prefab "{CDD7EFA9CF265F85}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Brake_RR.et"
-     LightType 64
-     ConfigurationsOverride {
-      SurfaceLightConfigItem "{5C7478F2B1866B24}" : "{59F3FC900B204F60}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Brake.conf" {
+     VehicleWheelSound R01 {
+      Filename "{18D4C82EFFAAFD6D}Sounds/Vehicles/Wheeled/Ural4320/Vehicles_Ural4320_Wheel_r_1.acp"
+      SoundPoint PointInfo "{5C72B34206C6BAF3}" {
+       PivotID "v_wheel_R01"
       }
      }
-    }
-    EmissiveLightSurfaceSlot Hazard_F {
-     Prefab "{0362905243D4FED1}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Hazard_F.et"
-     LightType 10
-     ConfigurationsOverride {
-      SurfaceLightConfigItem "{5C7478F2B868495A}" : "{E0DC1C489DFD91ED}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Dipped.conf" {
+     VehicleWheelSound L02 {
+      Filename "{C1AA53413EEBB7CB}Sounds/Vehicles/Wheeled/Ural4320/Vehicles_Ural4320_Wheel_l_2.acp"
+      SoundPoint PointInfo "{5C72B34205A411B2}" {
+       PivotID "v_wheel_L02"
       }
      }
-    }
-    EmissiveLightSurfaceSlot Head_FL {
-     Prefab "{91D74533B06C7493}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Head_FL.et"
-     LightType 522
-     ConfigurationsOverride {
-      SurfaceLightConfigItem "{5C7478F2BBB2E1CB}" : "{E0DC1C489DFD91ED}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Dipped.conf" {
-      }
-      SurfaceLightConfigItem "{5C7478F28699B1B4}" : "{1EF1BAD986852D8F}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Beam.conf" {
-      }
-     }
-    }
-    EmissiveLightSurfaceSlot Head_FR {
-     Prefab "{ECCFA9CBD5FF480A}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Head_FR.et"
-     LightType 522
-     ConfigurationsOverride {
-      SurfaceLightConfigItem "{5C7478F28DD3CBFF}" : "{E0DC1C489DFD91ED}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Dipped.conf" {
-      }
-      SurfaceLightConfigItem "{5C7478F28EC75B87}" : "{1EF1BAD986852D8F}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Beam.conf" {
-      }
-     }
-    }
-    EmissiveLightSurfaceSlot Running_RL {
-     Prefab "{DDED5E72A5F2757D}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Running_RL.et"
-     LightType 82
-     ConfigurationsOverride {
-      SurfaceLightConfigItem "{5C7478F28BDD9D8A}" : "{E0DC1C489DFD91ED}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Dipped.conf" {
-      }
-      SurfaceLightConfigItem "{5C7478F2965A04CF}" : "{59F3FC900B204F60}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Brake.conf" {
-      }
-     }
-    }
-    EmissiveLightSurfaceSlot Running_RR {
-     Prefab "{F840212E2F138649}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Running_RR.et"
-     LightType 82
-     ConfigurationsOverride {
-      SurfaceLightConfigItem "{5C7478F29DCDBE5C}" : "{E0DC1C489DFD91ED}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Dipped.conf" {
-      }
-      SurfaceLightConfigItem "{5C7478F29EAAAFC4}" : "{59F3FC900B204F60}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Brake.conf" {
+     VehicleWheelSound R02 {
+      Filename "{81CA71B7E24DCCFD}Sounds/Vehicles/Wheeled/Ural4320/Vehicles_Ural4320_Wheel_r_2.acp"
+      SoundPoint PointInfo "{5C72B34204942FE9}" {
+       PivotID "v_wheel_R02"
       }
      }
     }
    }
-   LightAction {
-    SCR_LightsDashboardUserAction "{51F8D0F2AF395105}" : "{97F134A922F3989A}Prefabs/Vehicles/Core/Lights/UA_Dashboard.conf" {
-     ParentContextList {
-      "Lights"
+   AICarMovementComponent "{5A3EFB66475D9F87}" {
+    Enabled 1
+   }
+   BaseLightManagerComponent "{51E210F17D2534F7}" {
+    LightSlots {
+     SCR_LightSlot "{5C7478FE13B7051F}" : "{3F796555FD10152A}Prefabs/Vehicles/Core/Lights/Light_Brake.conf" {
+      LightPositionInfo EntitySlotInfo "{51E177468DA2D7F8}" {
+       Offset -1.0109 1.0371 -2.6958
+      }
+      ParentSurface "0"
      }
-     UIInfo UIInfo "{5C94787C3E51E952}" {
-      Name "#AR-UserAction_DashboardLight"
+     SCR_LightSlot "{5C7478FE1CC07682}" : "{3F796555FD10152A}Prefabs/Vehicles/Core/Lights/Light_Brake.conf" {
+      LightPositionInfo EntitySlotInfo "{51E177468DA2D7F8}" {
+       Offset 1.0109 1.0371 -2.6958
+      }
+      ParentSurface "1"
      }
-     CanAggregate 1
-     "Sort Priority" 3
+     SCR_LightSlot "{5C7478F98A541B02}" : "{89853FD0B72E39A1}Prefabs/Vehicles/Core/Lights/Light_Head.conf" {
+      LightPositionInfo EntitySlotInfo "{51DAAC8FC2824EEC}" {
+       Offset -0.7004 1.3705 2.5664
+       Angles -30.0624 -5 8.4821
+      }
+      LightPrefab "{00EF649B4A1C872B}Prefabs/Vehicles/Wheeled/JLTV/Lights/VehicleLight_Head_JLTV.et"
+      ParentSurface "3"
+     }
+     SCR_LightSlot "{5C7478F98BAA414A}" : "{89853FD0B72E39A1}Prefabs/Vehicles/Core/Lights/Light_Head.conf" {
+      LightPositionInfo EntitySlotInfo "{51DAAC8FC2824EEC}" {
+       Offset 0.7004 1.3705 2.5664
+       Angles -31.1279 5 0
+      }
+      LightPrefab "{00EF649B4A1C872B}Prefabs/Vehicles/Wheeled/JLTV/Lights/VehicleLight_Head_JLTV.et"
+     }
+     SCR_LightSlot "{5C7478FBC673F443}" : "{FCCBB28A48232EE4}Prefabs/Vehicles/Core/Lights/Light_HiBeam.conf" {
+      LightPositionInfo EntitySlotInfo "{51E17746999D1D6E}" {
+       Offset -0.7004 1.3705 2.5664
+      }
+      LightPrefab "{47AF1373842EC90E}Prefabs/Vehicles/Wheeled/JLTV/Lights/VehicleLight_HiBeams_JLTV.et"
+     }
+     SCR_LightSlot "{5C7478FBC76E8CAD}" : "{FCCBB28A48232EE4}Prefabs/Vehicles/Core/Lights/Light_HiBeam.conf" {
+      LightPositionInfo EntitySlotInfo "{51E17746999D1D6E}" {
+       Offset 0.7004 1.3705 2.5664
+      }
+      LightPrefab "{47AF1373842EC90E}Prefabs/Vehicles/Wheeled/JLTV/Lights/VehicleLight_HiBeams_JLTV.et"
+     }
+     SCR_LightSlot "{5C94787D9754221C}" : "{50D459CD2CEC9DAD}Prefabs/Vehicles/Core/Lights/Light_Dashboard.conf" {
+      LightPositionInfo EntitySlotInfo "{51E2210D04212E5A}" {
+       Offset 0 2.2111 0
+      }
+      LightPrefab "{420BD0104ACAFDD9}Prefabs/Vehicles/Core/Lights/JLTV_Dashboard.et"
+     }
     }
-    SCR_LightsPresenceUserAction "{5C7478FBDA4D7915}" : "{543FB4FCD60B1B36}Prefabs/Vehicles/Core/Lights/UA_Lights.conf" {
-     ParentContextList {
-      "Lights"
+    EmissiveSurfaceSlots {
+     EmissiveLightSurfaceSlot Brake_RL {
+      Prefab "{B0CF0351AAB5631C}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Brake_RL.et"
+      LightType 64
+      ConfigurationsOverride {
+       SurfaceLightConfigItem "{5C7478F2B6346F70}" : "{59F3FC900B204F60}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Brake.conf" {
+       }
+      }
      }
-     CanAggregate 1
+     EmissiveLightSurfaceSlot Brake_RR {
+      Prefab "{CDD7EFA9CF265F85}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Brake_RR.et"
+      LightType 64
+      ConfigurationsOverride {
+       SurfaceLightConfigItem "{5C7478F2B1866B24}" : "{59F3FC900B204F60}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Brake.conf" {
+       }
+      }
+     }
+     EmissiveLightSurfaceSlot Hazard_F {
+      Prefab "{0362905243D4FED1}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Hazard_F.et"
+      LightType 10
+      ConfigurationsOverride {
+       SurfaceLightConfigItem "{5C7478F2B868495A}" : "{E0DC1C489DFD91ED}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Dipped.conf" {
+       }
+      }
+     }
+     EmissiveLightSurfaceSlot Head_FL {
+      Prefab "{91D74533B06C7493}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Head_FL.et"
+      LightType 522
+      ConfigurationsOverride {
+       SurfaceLightConfigItem "{5C7478F2BBB2E1CB}" : "{E0DC1C489DFD91ED}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Dipped.conf" {
+       }
+       SurfaceLightConfigItem "{5C7478F28699B1B4}" : "{1EF1BAD986852D8F}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Beam.conf" {
+       }
+      }
+     }
+     EmissiveLightSurfaceSlot Head_FR {
+      Prefab "{ECCFA9CBD5FF480A}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Head_FR.et"
+      LightType 522
+      ConfigurationsOverride {
+       SurfaceLightConfigItem "{5C7478F28DD3CBFF}" : "{E0DC1C489DFD91ED}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Dipped.conf" {
+       }
+       SurfaceLightConfigItem "{5C7478F28EC75B87}" : "{1EF1BAD986852D8F}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Beam.conf" {
+       }
+      }
+     }
+     EmissiveLightSurfaceSlot Running_RL {
+      Prefab "{DDED5E72A5F2757D}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Running_RL.et"
+      LightType 82
+      ConfigurationsOverride {
+       SurfaceLightConfigItem "{5C7478F28BDD9D8A}" : "{E0DC1C489DFD91ED}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Dipped.conf" {
+       }
+       SurfaceLightConfigItem "{5C7478F2965A04CF}" : "{59F3FC900B204F60}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Brake.conf" {
+       }
+      }
+     }
+     EmissiveLightSurfaceSlot Running_RR {
+      Prefab "{F840212E2F138649}Prefabs/Vehicles/Wheeled/JLTV/Lights/JLTV_ES_Running_RR.et"
+      LightType 82
+      ConfigurationsOverride {
+       SurfaceLightConfigItem "{5C7478F29DCDBE5C}" : "{E0DC1C489DFD91ED}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Dipped.conf" {
+       }
+       SurfaceLightConfigItem "{5C7478F29EAAAFC4}" : "{59F3FC900B204F60}Prefabs/Vehicles/Core/LightSurfaces/LightSurface_Brake.conf" {
+       }
+      }
+     }
     }
-    SCR_LightsHiBeamsUserAction "{5C7478FB27807374}" : "{0B4038621E89171C}Prefabs/Vehicles/Core/Lights/UA_HiBeam.conf" {
-     ParentContextList {
-      "Lights"
+    LightAction {
+     SCR_LightsDashboardUserAction "{51F8D0F2AF395105}" : "{97F134A922F3989A}Prefabs/Vehicles/Core/Lights/UA_Dashboard.conf" {
+      ParentContextList {
+       "Lights"
+      }
+      UIInfo UIInfo "{5C94787C3E51E952}" {
+       Name "#AR-UserAction_DashboardLight"
+      }
+      CanAggregate 1
+      "Sort Priority" 3
      }
-     CanAggregate 1
-     "Sort Priority" 1
-    }
-    SCR_LightsDashboardUserAction "{5C94787D8173A4DC}" : "{97F134A922F3989A}Prefabs/Vehicles/Core/Lights/UA_Dashboard.conf" {
-     ParentContextList {
-      "Lights"
+     SCR_LightsPresenceUserAction "{5C7478FBDA4D7915}" : "{543FB4FCD60B1B36}Prefabs/Vehicles/Core/Lights/UA_Lights.conf" {
+      ParentContextList {
+       "Lights"
+      }
+      CanAggregate 1
      }
-     CanAggregate 1
-     "Sort Priority" 3
+     SCR_LightsHiBeamsUserAction "{5C7478FB27807374}" : "{0B4038621E89171C}Prefabs/Vehicles/Core/Lights/UA_HiBeam.conf" {
+      ParentContextList {
+       "Lights"
+      }
+      CanAggregate 1
+      "Sort Priority" 1
+     }
+     SCR_LightsDashboardUserAction "{5C94787D8173A4DC}" : "{97F134A922F3989A}Prefabs/Vehicles/Core/Lights/UA_Dashboard.conf" {
+      ParentContextList {
+       "Lights"
+      }
+      CanAggregate 1
+      "Sort Priority" 3
+     }
     }
    }
-  }
-  BaseVehicleNodeComponent "{20FB66C5B2237133}" {
-   components {
-    SCR_BaseHUDComponent "{37C2676694790BC7}" {
-     InfoDisplays {
-      SCR_InfoDisplay "{50E6E6F81354B90F}" {
-       InfoDisplays {
-        SCR_AnalogGaugeMultiSignal "{50E6F12BB4D36587}" {
-         m_fValueMax 170
-         m_fSectionEveryNthValue 85
+   BaseVehicleNodeComponent "{20FB66C5B2237133}" {
+    components {
+     SCR_BaseHUDComponent "{37C2676694790BC7}" {
+      InfoDisplays {
+       SCR_InfoDisplay "{50E6E6F81354B90F}" {
+        InfoDisplays {
+         SCR_AnalogGaugeMultiSignal "{50E6F12BB4D36587}" {
+          m_fValueMax 170
+          m_fSectionEveryNthValue 85
+         }
         }
        }
       }
      }
     }
    }
-  }
-  MeshObject "{51DAA09FEFBFC0E7}" {
-   Materials {
-    MaterialAssignClass "{5C72CA225F7A3B65}" {
-     SourceMaterial "Mirror_Generic"
-     AssignedMaterial "{A47C5D03ADB1464D}Assets/Vehicles/Wheeled/JLTV/data/Mirror_generic.emat"
-    }
-    MaterialAssignClass "{5C72CA225E16A901}" {
-     SourceMaterial "Mirror_Generic"
-     AssignedMaterial "{A47C5D03ADB1464D}Assets/Vehicles/Wheeled/JLTV/data/Mirror_generic.emat"
-    }
-    MaterialAssignClass "{5C8891426232EF0F}" {
-     SourceMaterial "Main_Body"
-     AssignedMaterial "{545C8860A582F3EF}Assets/Vehicles/Wheeled/JLTV/data/Main_Body_Green.emat"
-    }
-   }
-  }
-  RigidBody "{51DAA09FECF52BBF}" {
-   Mass 10200
-   CenterOfMass 0 1.2 0
-   LinearSleepingThreashold 0.4
-   AngularSleepingThreashold 0.5
-  }
-  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
-   CompartmentSlots {
-    PilotCompartmentSlot PilotCompartment {
-     CompartmentAction SCR_GetInUserAction "{5086DB209BDE8253}" {
-      ParentContextList {
-      }
-      CanAggregate 1
+   MeshObject "{51DAA09FEFBFC0E7}" {
+    Materials {
+     MaterialAssignClass "{5C72CA225F7A3B65}" {
+      SourceMaterial "Mirror_Generic"
+      AssignedMaterial "{A47C5D03ADB1464D}Assets/Vehicles/Wheeled/JLTV/data/Mirror_generic.emat"
      }
-     GetOutAction SCR_GetOutAction "{509D56667AFC4BD5}" {
-      ParentContextList {
-      }
+     MaterialAssignClass "{5C72CA225E16A901}" {
+      SourceMaterial "Mirror_Generic"
+      AssignedMaterial "{A47C5D03ADB1464D}Assets/Vehicles/Wheeled/JLTV/data/Mirror_generic.emat"
      }
-     SwitchSeatAction SCR_SwitchSeatAction "{509D56667885A8DC}" {
-      ParentContextList {
-      }
-     }
-     PassengerPositionInfo EntitySlotInfo "{A1CB25848A3D93A8}" {
-      PivotID "driver_idle"
-     }
-     DoorInfoList {
-      0 0
+     MaterialAssignClass "{5C8891426232EF0F}" {
+      SourceMaterial "Main_Body"
+      AssignedMaterial "{545C8860A582F3EF}Assets/Vehicles/Wheeled/JLTV/data/Main_Body_Green.emat"
      }
     }
    }
+   RigidBody "{51DAA09FECF52BBF}" {
+    Mass 10200
+    CenterOfMass 0 1.2 0
+    LinearSleepingThreashold 0.4
+    AngularSleepingThreashold 0.5
+   }
+   SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+    CompartmentSlots {
+     PilotCompartmentSlot PilotCompartment {
+      CompartmentAction SCR_GetInUserAction "{5086DB209BDE8253}" {
+       ParentContextList {
+       }
+       CanAggregate 1
+      }
+      GetOutAction SCR_GetOutAction "{509D56667AFC4BD5}" {
+       ParentContextList {
+       }
+      }
+      SwitchSeatAction SCR_SwitchSeatAction "{509D56667885A8DC}" {
+       ParentContextList {
+       }
+      }
+      PassengerPositionInfo EntitySlotInfo "{A1CB25848A3D93A8}" {
+       PivotID "driver_idle"
+      }
+      DoorInfoList + {
+       0
+      }
+     }
+    }
+   }
   }
+ }
+ JLTV_CROWSII_Olive2 {
+  coords 140.73 1 164.219
  }
 }
 Vehicle JLTV_Base1 : "{3A4CDF7428E32E7C}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Base.et" {
@@ -291,4 +278,64 @@ Vehicle JLTV_Base1 : "{3A4CDF7428E32E7C}Prefabs/Vehicles/Wheeled/JLTV/JLTV_Base.
 }
 Vehicle M1025_armed_M2HB1 : "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et" {
  coords 112.088 1 148.688
+}
+Vehicle JLTV_CROWSII_Black1 : "{41F4B0594B760AD2}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII_Black.et" {
+ coords 134.754 1 165.288
+}
+Vehicle JLTV_CROWS_Olive1 : "{423EA86BC26F5128}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWS_Olive.et" {
+ coords 139.754 1 156.585
+}
+Vehicle JLTV_CROWSII1 : "{49B5C8D1F28E7B7F}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII.et" {
+ coords 129.669 1 164.972
+}
+Turret : "{8BA8628C499447B4}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_50cal_Crows.et" {
+ components {
+  SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   CompartmentSlots {
+    TurretCompartmentSlot TurretCompartment {
+     CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
+      ParentContextList +{
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
+      Offset 1.2088 1.3421 0.0505
+     }
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   Enabled 1
+   AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
+    Offset -0.1401 -0.244 0.2556
+   }
+   WeaponTemplate "{620EF62AED2BF8DB}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_CROWS.et"
+  }
+  WeaponSlotComponent "{620EF3ADCBA19320}" {
+   Enabled 0
+   WeaponType MachineGun
+   AttachType InventoryStorageSlot "{620EF3ADE78BFF61}" {
+    PivotID "v_turret_01"
+    Offset 0 0.0027 0.0134
+    Angles 11.2542 0 0
+   }
+   WeaponTemplate "{620EF62A8BE50B04}Prefabs/Weapons/HeavyWeapons/Smoke_CROWS.et"
+   WeaponSlotIndex 1
+  }
+  ActionsManagerComponent "{51ACD09C7181BA0B}" {
+   ActionContexts {
+    UserActionContext "{51ACFBB064390C6E}" {
+     ContextName "unused"
+     Position PointInfo "{51ACFBB061993925}" {
+     }
+    }
+   }
+  }
+ }
+ coords 124.682 1 154.149
+}
+Vehicle JLTV_CROWS1 : "{A19889DD96914B75}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWS.et" {
+ coords 129.383 1 156.625
+}
+Turret : "{BB1AD8A36F4CCCB3}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_50cal_Crows_Black.et" {
+ coords 124.599 1 161.304
 }
