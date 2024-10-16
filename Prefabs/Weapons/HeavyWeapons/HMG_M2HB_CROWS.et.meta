@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{620EF62AED2BF8DB}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_CROWS.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

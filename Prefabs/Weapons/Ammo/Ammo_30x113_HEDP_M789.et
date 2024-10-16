@@ -1,0 +1,12 @@
+Projectile : "{67FED88E5085F63F}Prefabs/Weapons/Core/Ammo_Bullet_Base.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  CollisionTriggerComponent "{5E9E8AD8D9E48F59}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{5E9E8AD8A726DA58}" {
+     EffectPrefab "{4C71C11C17A13CB0}Prefabs/Weapons/Warheads/Warhead_Grenade_HEDP_M789.et"
+    }
+   }
+  }
+ }
+}

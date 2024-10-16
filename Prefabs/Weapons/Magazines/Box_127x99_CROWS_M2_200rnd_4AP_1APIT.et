@@ -1,0 +1,20 @@
+GenericEntity : "{5CD690CF2464ABA9}Prefabs/Weapons/Magazines/Box_127x99_M2_100rnd_Base.et" {
+ ID "0000000000000001"
+ components {
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MaxAmmo 200
+   AmmoMapping {
+    0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+   }
+  }
+  MeshObject "{CA6BE4D6A23F8EF0}" {
+   Materials {
+    MaterialAssignClass "{620EF96F3C604BF8}" {
+     SourceMaterial "M2_AmmoBox"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+  }
+ }
+ coords 101.715 2.087 1255.674
+}

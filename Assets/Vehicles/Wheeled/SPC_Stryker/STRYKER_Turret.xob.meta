@@ -1,0 +1,78 @@
+MetaFileClass {
+ Name "{620EF62AFCD35E40}Assets/Vehicles/Wheeled/SPC_Stryker/STRYKER_Turret.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{5B261C479EE2C5AA}" {
+     SourceMaterial "STYKER_base_exterior_Turret"
+     AssignedMaterial "{618F2092B49A6797}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Turret.emat"
+    }
+    MaterialAssignClass "{5B2880889AA3B703}" {
+     SourceMaterial "STRYKER_Turret_Glass"
+     AssignedMaterial "{2C78530500A17A8E}Assets/Vehicles/Wheeled/SPC_Stryker/data/STRYKER_Turret_Glass.emat"
+    }
+   }
+   MeshParams {
+    MeshParam CROW_V1_001 {
+    }
+    MeshParam CROW_V1_002 {
+    }
+    MeshParam CROW_Base {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_CROW_Base {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{469B8DA92D8109EC}Common/Materials/Game/Metal/metal_10mm_min.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_CROW_Mag {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{469B8DA92D8109EC}Common/Materials/Game/Metal/metal_10mm_min.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_CROW_Optics {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{469B8DA92D8109EC}Common/Materials/Game/Metal/metal_10mm_min.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_CROWS {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{5B24B3A88D289D32}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{5B24B3A88D289E9B}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{5B24B3A88D289EF7}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{5B24B3A88D289ED8}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{5B24B3A88D289E21}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

@@ -1,0 +1,13 @@
+Turret : "{8BA8628C499447B4}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_50cal_Crows.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{62A0219AB05CBD71}" {
+     SourceMaterial "STYKER_base_exterior_Turret"
+     AssignedMaterial "{A1E725BC4E6C777A}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Turret_Tan.emat"
+    }
+   }
+  }
+ }
+}

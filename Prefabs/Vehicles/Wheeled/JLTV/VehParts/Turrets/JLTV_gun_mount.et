@@ -46,13 +46,86 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
   }
   SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{620D21EE2E77582B}" {
+     AnimDoorIndex 2
+     ContextName "Door_L02"
+     Coverage 0.3
+     OpenDoorAction SCR_OpenVehicleDoorUserAction "{60FCB36F1B7B7E07}" {
+      UIInfo SCR_ActionUIInfo "{60B8C998DB579870}" {
+       Name "#AR-UserAction_Open"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 5
+     }
+     CloseDoorAction SCR_CloseVehicleDoorUserAction "{60FCB36CE4ABBEF6}" {
+      UIInfo SCR_ActionUIInfo "{60B8C998FC0A0D46}" {
+       Name "#AR-UserAction_Close"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" -1
+     }
+     EntryPositionInfo PointInfo "{61E709F822C67B85}" {
+      PivotID "passenger_01_getIn"
+      Offset -0.8 0 0
+     }
+     ExitPositionInfo PointInfo "{61E709F9DD93D5BA}" {
+      PivotID "passenger_01_getIn"
+     }
+     GetInTeleport 1
+     GetOutTeleport 1
+     AlignDuringGetOut 1
+     GetInAligningTeleport 1
+     GetOutAligningTeleport 1
+     GetInSeatAligningOnEvent 1
+     GetOutAligningOnEvent 1
+    }
+    CompartmentDoorInfo "{620D21E9F4BC184F}" {
+     AnimDoorIndex 3
+     ContextName "Door_R02"
+     Coverage 0.3
+     OpenDoorAction SCR_OpenVehicleDoorUserAction "{60FCB36F33F6F34A}" {
+      UIInfo SCR_ActionUIInfo "{60B8C998DB579870}" {
+       Name "#AR-UserAction_Open"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 5
+     }
+     CloseDoorAction SCR_CloseVehicleDoorUserAction "{60FCB36CF6CB1AFD}" {
+      UIInfo SCR_ActionUIInfo "{6160A4D07C7BC0B7}" {
+       Name "#AR-UserAction_Close"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" -1
+     }
+     EntryPositionInfo PointInfo "{61E709F82F582248}" {
+      PivotID "passenger_02_idle"
+      Offset 0.8 -1 0
+      Angles 0 -90 0
+     }
+     ExitPositionInfo PointInfo "{61E709F82879987F}" {
+      PivotID "passenger_02_idle"
+      Offset 0.8 0 0
+     }
+     GetInTeleport 1
+     GetOutTeleport 1
+     AlignDuringGetOut 1
+     GetInAligningTeleport 1
+     GetOutAligningTeleport 1
+     GetInSeatAligningOnEvent 1
+    }
+   }
    CompartmentSlots {
     TurretCompartmentSlot TurretCompartment {
      CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
       ParentContextList {
-       "Door_L02" "gunner" "Door_R02"
+       "door_r02" "door_l02"
       }
-      CanAggregate 1
+     }
+     GetOutAction SCR_GetOutAction "{509D56664FF79DDB}" {
+      ParentContextList {
+       "door_r02_int" "door_l02_int"
+      }
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
       ParentContextList {
@@ -62,62 +135,26 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      AdditionalActions {
       SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
        ParentContextList {
-        "Door_R02" "Door_L02"
+        "gunner"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D59F48D7BD2}" {
+       ParentContextList {
+        "door_r02" "door_l02"
        }
       }
      }
      PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
       PivotID "gunner_idle"
-      Offset 0 0 0
+      Offset 0 0.05 0
      }
      ForcedFreeLook 0
      DoorInfoList {
-      CompartmentDoorInfo "{5C88710330036704}" : "{29E3F04C0F2907CB}Prefabs/Vehicles/Wheeled/JLTV/Configs/Door_L01.conf" {
-       ExitPositionInfo PointInfo "{5C88710155F210B7}" {
-        PivotID "driver_getIn"
-       }
-       GetOutTeleport 1
-      }
-      CompartmentDoorInfo "{5C88710330036701}" : "{770BD90FB0A489C4}Prefabs/Vehicles/Wheeled/JLTV/Configs/Door_L02.conf" {
-       ExitPositionInfo PointInfo "{5C88710153A56B86}" {
-        PivotID "GetOut_Door_L02"
-       }
-       GetOutTeleport 1
-      }
-      CompartmentDoorInfo "{5C88710330028F2B}" : "{93C40485433E10E4}Prefabs/Vehicles/Wheeled/JLTV/Configs/Door_R01.conf" {
-       ExitPositionInfo PointInfo "{5C887100A74BDA20}" {
-        PivotID "codriver_getIn"
-       }
-       GetOutTeleport 1
-      }
-      CompartmentDoorInfo "{5C88710330028F2E}" : "{CD2C2DC6FCB39EEB}Prefabs/Vehicles/Wheeled/JLTV/Configs/Door_R02.conf" {
-       ExitPositionInfo PointInfo "{5C8871015A78A210}" {
-        PivotID "passenger_02_getIn"
-       }
-       GetOutTeleport 1
-       EntryPositionAligning 0
-      }
-      CompartmentDoorInfo "{50B917CA9C90BD91}" {
-       ContextName "default"
-       EntryPositionInfo PointInfo "{50B917CA96E757AA}" {
-        Offset 0 4 0
-       }
-       ExitPositionInfo PointInfo "{5C88710330036706}" {
-        Offset 0 4 0
-       }
-       GetInTeleport 1
-       GetOutTeleport 1
-       EntryPositionAligning 1
-       SeatPositionAligning 1
-      }
-     }
-     AccessibilitySettings CompartmentAccessibilityContext "{5C88710330028DEA}" {
-      TraceOffset 0 0.2 0.5
-      TraceLength -0.5
+      0 1
      }
      BaseCoverage 0.2
      AllowAiming 1
-     m_DefaultOccupantData SCR_DefaultOccupantData "{5C88710330028DE7}" {
+     m_DefaultOccupantData SCR_DefaultOccupantData "{620D21EF0B2CAA26}" {
       m_sDefaultOccupantPrefab "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
      }
     }
@@ -191,25 +228,25 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      Radius 0.6
     }
     UserActionContext "{5C8881761F4C1583}" {
-     ContextName "Door_L01"
+     ContextName "Door_L01_Turret"
      Position PointInfo "{5C8881761F4DFA24}" {
       PivotID "Door_L01"
      }
     }
     UserActionContext "{5C8881761F4DD80C}" {
-     ContextName "Door_L02"
+     ContextName "Door_L02_Turret"
      Position PointInfo "{5C8881761F4DBC9B}" {
       PivotID "Door_L02"
      }
     }
     UserActionContext "{5C8881761F4D97A5}" {
-     ContextName "Door_R01"
+     ContextName "Door_R01_Turret"
      Position PointInfo "{5C8881761F4D69B3}" {
       PivotID "Door_R01"
      }
     }
     UserActionContext "{5C8881761F4D4300}" {
-     ContextName "Door_R02"
+     ContextName "Door_R02_Turret"
      Position PointInfo "{5C8881761F4D26B9}" {
       PivotID "Door_R02"
      }
@@ -224,4 +261,5 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
   }
  }
+ coords 108.913 0 1241.943
 }

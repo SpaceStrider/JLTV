@@ -1,0 +1,134 @@
+GenericEntity : "{BB35A8E1403CDE4B}Prefabs/Weapons/HeavyWeapons/HMG_M2HB.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponSoundComponent "{5A8685198A9AEEDD}" {
+   Filenames {
+    "{1A619AD876DD71BE}Sounds/Weapons/Attachments/Underbarrel/M203/Weapons_Attch_Underbarrel_M203_Shot.acp"
+   }
+  }
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{620EF62AFB8879C0}Assets/Vehicles/Wheeled/SPC_Stryker/STRYKER_Turret_Smoke.xob"
+   Materials {
+    MaterialAssignClass "{620EF6D1C32F2498}" {
+     SourceMaterial "STYKER_base_exterior_Turret"
+     AssignedMaterial "{620EF62ACA19A005}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Turret.emat"
+    }
+   }
+  }
+  RigidBody "{572AF6B736F67B4F}" {
+   Enabled 0
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     MuzzleEndPositions {
+      PointInfo "{B80A64F4B6CFB9BF}" {
+       PivotID "Barrel_Muzzle_01"
+      }
+      PointInfo "{5B288E30D9215B58}" {
+      }
+      PointInfo "{5B288E30DB7CA90B}" {
+      }
+      PointInfo "{5B288E3024AFD554}" {
+      }
+      PointInfo "{5B288E3025B58DAA}" {
+      }
+      PointInfo "{5B288E3026869C3F}" {
+      }
+      PointInfo "{5B288E30276D2E21}" {
+      }
+      PointInfo "{5B288E302044972F}" {
+      }
+      PointInfo "{5B288E30217F2687}" {
+      }
+      PointInfo "{5B288E30224DAC94}" {
+      }
+      PointInfo "{5B288E302310D77A}" {
+      }
+      PointInfo "{5B288E302C0B611C}" {
+      }
+      PointInfo "{5B288E302D05F96A}" {
+      }
+      PointInfo "{5B288E302DF25355}" {
+      }
+      PointInfo "{5B288E302EE27E1A}" {
+      }
+      PointInfo "{5B288E302FFCF99F}" {
+      }
+     }
+     ProjectileSpawnPositions {
+      PointInfo "{50F64C476EC435CA}" {
+       PivotID "Barrel_Chamber_01"
+      }
+      PointInfo "{5B288E308391C6EA}" {
+       PivotID "Barrel_Chamber_03"
+      }
+      PointInfo "{5B288E308C6A055D}" {
+       PivotID "Barrel_Chamber_05"
+      }
+      PointInfo "{5B288E308D89C132}" {
+       PivotID "Barrel_Chamber_07"
+      }
+      PointInfo "{5B288E308E58D84F}" {
+       PivotID "Barrel_Chamber_09"
+      }
+      PointInfo "{5B288E308F274488}" {
+       PivotID "Barrel_Chamber_11"
+      }
+      PointInfo "{5B288E308FF9117A}" {
+       PivotID "Barrel_Chamber_13"
+      }
+      PointInfo "{5B288E30891489C4}" {
+       PivotID "Barrel_Chamber_15"
+      }
+      PointInfo "{5B288E3089E4E5B2}" {
+       PivotID "Barrel_Chamber_02"
+      }
+      PointInfo "{5B288E308ABCB654}" {
+       PivotID "Barrel_Chamber_04"
+      }
+      PointInfo "{5B288E309590B578}" {
+       PivotID "Barrel_Chamber_06"
+      }
+      PointInfo "{5B288E3096BFB6F2}" {
+       PivotID "Barrel_Chamber_08"
+      }
+      PointInfo "{5B288E3097AD376F}" {
+       PivotID "Barrel_Chamber_10"
+      }
+      PointInfo "{5B288E30906E7FAD}" {
+       PivotID "Barrel_Chamber_12"
+      }
+      PointInfo "{5B288E30911CC9A3}" {
+       PivotID "Barrel_Chamber_14"
+      }
+      PointInfo "{5B288E3091F99B5D}" {
+       PivotID "Barrel_Chamber_16"
+      }
+     }
+     FireModes {
+      BaseFireMode "{B80A64F4A8EF8333}" {
+       MaxSalvo 8
+       RoundsPerMinute 100
+      }
+     }
+     MagazineWell MagazineWellCROWSSmoke "{572AF6B736F67437}" {
+     }
+     UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
+      m_bShowCaliber 0
+      m_sCaliber ""
+     }
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      Offset 0 0.0728 -0.0572
+     }
+     MagazineTemplate "{C820846B0521423C}Prefabs/Weapons/Magazines/Smoke.et"
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "Smoke Launcher"
+    Description ""
+   }
+  }
+ }
+ coords 100.379 0 1260.347
+}
