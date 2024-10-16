@@ -1,0 +1,12 @@
+GenericEntity : "{7D969E6B3209529C}Prefabs/Weapons/Warheads/Warhead_Grenade_HEDP_M433.et" {
+ ID "520EA1D2A9E0B759"
+ components {
+  BaseTriggerComponent "{55129E81CBAA1390}" {
+   PROJECTILE_EFFECTS {
+    SubmunitionEffect "{594AA92F7B1D28A0}" {
+     Count 5
+    }
+   }
+  }
+ }
+}

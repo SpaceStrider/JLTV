@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{EB19ADD9D0C7D6B4}Prefabs/Vehicles/Core/Configs/CargoCompartment_JLTV2.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

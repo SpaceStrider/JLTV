@@ -1,0 +1,36 @@
+MetaFileClass {
+ Name "{620EF62AFB8879C0}Assets/Vehicles/Wheeled/SPC_Stryker/STRYKER_Turret_Smoke.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{5B286C57F6AB16E6}" {
+     SourceMaterial "STYKER_base_exterior_Turret"
+     AssignedMaterial "{618F2092B49A6797}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Turret.emat"
+    }
+   }
+   MeshParams {
+    MeshParam CROW_Smoke {
+    }
+   }
+   Common TXOCommonClass "{5B286C57F6AFB5C5}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{5B286C57F6AF832D}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{5B286C57F6AF8D2D}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{5B286C57F6AF8EF7}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{5B286C57F6AF8E43}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

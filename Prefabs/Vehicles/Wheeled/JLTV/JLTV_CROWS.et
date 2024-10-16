@@ -1,0 +1,55 @@
+Vehicle : "{49B5C8D1F28E7B7F}Prefabs/Vehicles/Wheeled/JLTV/JLTV_CROWSII.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{5C72CA225F7A3B65}" {
+     SourceMaterial "Mirror_Generic"
+     AssignedMaterial "{A47C5D03ADB1464D}Assets/Vehicles/Wheeled/JLTV/data/Mirror_generic.emat"
+    }
+    MaterialAssignClass "{620EF3ACBC589060}" {
+     SourceMaterial "Main_Body"
+     AssignedMaterial "{545C8860A582F3EF}Assets/Vehicles/Wheeled/JLTV/data/Main_Body_Green.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#SPC_EditableEntity_JLTV_CROWS_Olive_Name"
+    m_Image "{39E3C05055008B5E}UI/Textures/EditorPreviews/Vehicles/Wheeled/JLTV/NVIDIA_Share_9Rhx12SU1G.edds"
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5C946CE5223089AE}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5DE8B00C63335F32}" {
+     SlotTemplate InventoryStorageSlot Turret {
+      Prefab "{4EC57F7A71F869BF}Prefabs/Weapons/Magazines/Box_127x99_CROWS_M2_200rnd_4AP_1APIT.et"
+     }
+     NumSlots 3
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo Roof {
+     Prefab "{B901C89C8799C152}Prefabs/Vehicles/Wheeled/JLTV/VehParts/JLTV_Roof_Olive.et"
+    }
+    RegisteringComponentSlotInfo CROWS {
+     Offset -0.7178 -0.0555 0.0656
+     Prefab "{8BA8628C499447B4}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_50cal_Crows.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{621328D96D3AFF11}" {
+     ContextName "gunner"
+     Position PointInfo "{621328D91D588696}" {
+      PivotID "codriver_idle"
+     }
+    }
+   }
+  }
+ }
+ coords 1301.788 37.75 2854.084
+}

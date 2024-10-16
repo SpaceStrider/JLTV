@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8BA8628C499447B4}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_50cal_Crows.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
